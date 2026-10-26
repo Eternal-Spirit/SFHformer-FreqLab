@@ -1,9 +1,9 @@
 ﻿"""
-scripts/make_crops.py — Prepare train/val/test crops from raw images.
+scripts/make_crops.py - Prepare train/val/test crops from raw images.
 
 Splits by source image BEFORE cropping to prevent near-duplicate leakage.
 
-Train: 4 random 320x320 crops per image as PNG.
+Train: random 320x320 crops per image as PNG.
 Val: 1 center 256x256 crop per image.
 Test: 1 center 256x256 crop per image.
 
@@ -52,11 +52,11 @@ def main():
     parser.add_argument('--dst', type=str, required=True, help='Destination directory for crops')
     parser.add_argument('--train-crop-size', type=int, default=320, help='Training crop size')
     parser.add_argument('--eval-crop-size', type=int, default=256, help='Val/test crop size')
-    parser.add_argument('--train-crops-per-image', type=int, default=4)
-    parser.add_argument('--val-count', type=int, default=100,
-                        help='Number of images to hold out from train for validation')
+    parser.add_argument('--train-crops-per-image', type=int, default=8)
+    parser.add_argument('--val-count', type=int, default=20,
+                        help='Number of images for validation')
     parser.add_argument('--test-count', type=int, default=50,
-                        help='Number of fixed test images (from official val set if available)')
+                        help='Number of fixed test images')
     parser.add_argument('--seed', type=int, default=42)
     args = parser.parse_args()
 
@@ -76,10 +76,15 @@ def main():
     # Split by source image
     indices = rng.permutation(len(all_images))
 
-    # If we have enough images, split into train/val/test
-    n_test = min(args.test_count, len(all_images) // 5)
-    n_val = min(args.val_count, len(all_images) // 5)
-    n_train = len(all_images) - n_val - n_test
+    total = len(all_images)
+    if total >= args.test_count + args.val_count + 5:
+        n_test = args.test_count
+        n_val = args.val_count
+        n_train = total - n_test - n_val
+    else:
+        n_test = min(args.test_count, max(1, total // 4))
+        n_val = min(args.val_count, max(1, total // 4))
+        n_train = max(1, total - n_test - n_val)
 
     train_idx = indices[:n_train]
     val_idx = indices[n_train:n_train + n_val]
@@ -90,6 +95,8 @@ def main():
         'val': [all_images[i] for i in val_idx],
         'test': [all_images[i] for i in test_idx],
     }
+
+    print(f"Splits: train={len(train_idx)}, val={len(val_idx)}, test={len(test_idx)}")
 
     # Verify no overlap
     split_names_set = {}

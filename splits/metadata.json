@@ -1,0 +1,12 @@
+{
+  "source": "D:\\SFHformer-FreqLab\\data\\raw",
+  "seed": 42,
+  "counts": {
+    "train": 300,
+    "val": 20,
+    "test": 50
+  },
+  "train_crop_size": 320,
+  "eval_crop_size": 256,
+  "train_crops_per_image": 10
+}
