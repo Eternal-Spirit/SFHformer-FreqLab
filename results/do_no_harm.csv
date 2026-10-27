@@ -1,0 +1,8 @@
+method,mean_psnr,mean_ssim,n_images
+r1_baseline,43.68,0.9811,50
+r2_gated,42.67,0.9732,50
+identity,100.00,1.0000,50
+gaussian_s1.0,29.34,0.8731,50
+gaussian_s2.0,25.33,0.7107,50
+median_3,31.18,0.8958,50
+notch,73.77,0.9733,50
