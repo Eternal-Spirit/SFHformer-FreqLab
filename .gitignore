@@ -1,4 +1,4 @@
-﻿.venv/
+.venv/
 data/
 checkpoints/
 runs/
@@ -12,3 +12,4 @@ Thumbs.db
 node_modules/
 frontend/dist/
 demo_package/
+.pytest_cache/

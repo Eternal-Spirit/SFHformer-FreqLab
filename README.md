@@ -1,264 +1,103 @@
-## [When Fast Fourier Transform Meets Transformer for Image Restoration] (ECCV 2024)
- Official implementation.
- 
-## Authors
-Xingyu Jiang, Xiuhui Zhang, Ning Gao, Yue Deng *
+# SFHformer-FreqLab & Dual-Stream Hybrid U-Net (`RetinaScan Studio`)
 
-School of Astronautics, Beihang University, Beijing, China
- 
-#### News
-Thanks for your interest in our work, we will continue to optimize our code. If you have any other questions, please feel free to raise them in the issues, and I will try my best to address them!
-- **May 20, 2025:** Our extension work SWFormer:**"Image Restoration via Multi-domain Learning"** of SFHformer is available at [https://arxiv.org/pdf/2505.05504](https://arxiv.org/pdf/2505.05504). Github Code: [https://github.com/deng-ai-lab/SWFormer](https://github.com/deng-ai-lab/SWFormer).
-- **Apr 11, 2025:** We release some visualizations of the dataset in the Visual result section. 
-- **Mar 27, 2025:** We release the pre-training weights of ITS and OTS with the test code in the dehazing folder.
-- **Oct 17, 2024:** The train code is now open and our paper is available [here](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/06190.pdf)! 
-- **Jul 25, 2024:** Paper accepted at ECCV 2024.
+**Spatial-Frequency Retinal Fundus Image Restoration and Topology-Preserving Dual-Stream Vessel Segmentation**
 
-<hr />
+- **Immutable Snapshot Tag**: `v3.1-phase5.2-verified` (`42ac0565d1d1517ef5bad9fdc1f392608272db1b`)
+- **Hardware Validation Target**: NVIDIA GeForce RTX 5060 Laptop GPU (`8 GB` VRAM, BF16 AMP + FP32 `SoftclDice`)
+- **Primary In-Domain Test**: FIVES Untouched Test (`N=200`, `N=199` deduplicated) | **External Transfer**: HRF (`N=45`: `40` pretrain-exposed, `5` unexposed exploratory)
 
-> **Abstract:** *Natural images can suffer from various degradation phenomena caused by adverse atmospheric conditions or unique degradation mechanism. Such diversity makes it challenging to design a universal framework for kinds of restoration tasks. Instead of exploring the commonality across different degradation phenomena, existing image restoration methods focus on the modification of network architecture under limited restoration priors. In this work, we first review various degradation phenomena from a frequency perspective as prior. Based on this, we propose an efficient image restoration framework, dubbed SFHformer, which incorporates the Fast Fourier Transform mechanism into Transformer architecture. Specifically,  we design a dual domain hybrid structure for multi-scale receptive fields modeling, in which the spatial domain and the frequency domain focuses on local modeling and global modeling, respectively. Moreover, we design unique positional coding and frequency dynamic convolution for each frequency component to extract rich frequency-domain features. Extensive experiments on thirty-one restoration datasets for a range of ten restoration tasks such as deraining, dehazing, deblurring, desnowing, denoising, super-resolution and underwater/low-light enhancement, demonstrate that our SFHformer surpasses the state-of-the-art approaches and achieves a favorable trade-off between performance, parameter size and computational cost.* 
-<hr />
+> **Scope & Clinical Disclaimer**: RetinaScan Studio and all neural models in this repository constitute a **research prototype for retinal vessel segmentation and spatial-frequency restoration analysis**. They have not undergone prospective clinical validation or regulatory clearance and must **not** be used as a diagnostic medical device.
 
-## Introduction
-<p align='center'>
-<img src = "image/introduce.jpg"> 
+---
 
-## Network Architecture
-<p align='center'>
-<img src = "image/method.jpg"> 
+## Clean Repository Structure
 
+```text
+D:\SFHformer-FreqLab\
+├── README.md                              # Project overview, benchmarks & quickstart
+├── LICENSE                                # Repository license
+├── requirments.txt                        # Python environment dependencies
+├── models/                                # Core neural architectures
+│   ├── SFHformer.py                       # 5-stage SFHformer-m restoration backbone (14.18M params)
+│   ├── unet.py                            # 4-stage DoubleConv + Bilinear clinical U-Net (7.7M params)
+│   └── dual_stream_unet.py                # DualStreamUNet + CrossStreamFusionBlock (16.41M params)
+├── freqlab/                               # Spectral gating, FFT mixers, image corruptions & metrics
+│   ├── gate.py                            # RadialBandGate (16 learnable log-amplitude spectral bands)
+│   ├── sfhformer_gated.py                 # Frequency-gated SFHformer variant (R2)
+│   ├── classical.py / corrupt.py / metrics.py
+│   └── retina_corrupt.py / retina_data.py / retina_engine.py
+├── utils/                                 # Topology losses & shared training utilities
+│   └── losses.py                          # BCEDiceLoss, FP32 SoftSkeletonize(12), HybridTopologyLoss
+├── scripts/                               # Active training, evaluation, auditing, serving & doc scripts
+│   ├── train_fives_retina.py              # SFHformer restoration fine-tuning (FIVES online crops)
+│   ├── train_unet.py                      # Single-stream Raw & Restored U-Net baselines
+│   ├── train_dual_stream_unet.py          # Two-stage DualStreamUNet training + N=59 calibration
+│   ├── evaluate_fives_retina.py           # Held-out 200-scan synthetic restoration evaluation
+│   ├── evaluate_milestone3.py             # Frozen single-stream & Frangi Milestone 3 evaluation
+│   ├── evaluate_dual_stream_milestone3.py # Frozen Dual-Stream Milestone 3 eval + Holm-Bonferroni stats
+│   ├── baseline_frangi.py                 # Calibrated multiscale Hessian Frangi control (tau=0.0010)
+│   ├── milestone1_data_audit.py           # Dataset disjointness, caliber profile & FOV clipping audit
+│   ├── milestone1_followup_audit.py       # Follow-up pHash & coverage resolution
+│   ├── milestone2_5_verification.py       # Clean-val N=59 paired verification (Raw vs Restored)
+│   ├── serve_restore.py                   # Flask inference API (:5001) with GPU_LOCK & 6-stage timing
+│   ├── retina_engine.py / retina_corrupt.py / retina_data.py
+│   ├── qa_phase5_1.py                     # Automated API, alignment, latency & concurrency QA
+│   ├── generate_phase5_3_diagrams.py      # 300-DPI technical architecture diagram suite (diag_1..5)
+│   ├── build_phase5_3_demo_package.py     # Qualitative comparison & immutable snapshot packager
+│   └── generate_phase6_documentation.py   # Phase 6 Master Technical Report & manifest compiler
+├── frontend/                              # RetinaScan Studio React 18 / Vite web UI (:3000)
+├── tests/                                 # Unit tests (`pytest tests/`)
+├── checkpoints/                           # Active weights & clean-val calibration records ONLY
+│   ├── fives_retina_finetune/best.pth     # SFHformer Milestone 3 restoration weights (67.80 MB)
+│   ├── unet_raw/best.pth                  # Raw U-Net weights + training history (86.97 MB)
+│   ├── unet_restored/best.pth             # Restored U-Net weights + training history (86.97 MB)
+│   ├── unet_dual_stream/best.pth          # Dual-Stream Hybrid weights (62.74 MB) + validation_calibration.json
+│   └── retina/, r1_baseline/, r2_gated/   # Baseline & ablation restoration models loaded by serve_restore.py
+├── data/                                  # Retinal cohorts ONLY (`fives/`, `hrf/`, `retina/`, `retina_samples/`)
+├── results/                               # Verified retinal audits & frozen Milestone 3 JSON benchmarks
+│   ├── fives_evaluation_results.json      # 200-scan restoration fidelity evaluation
+│   ├── milestone3/                        # Frozen per-image & statistical test results
+│   ├── dataset_audit/                     # Milestone 1, follow-up pHash & Milestone 2.5 audits
+│   └── benchmarks/frangi_baseline/        # Calibrated Frangi control outputs
+├── demo_package/                          # Phase 5.3 300-DPI diagrams, qualitative figures & SNAPSHOT_MANIFEST.json
+├── final_documentation/                   # Phase 6 Final_Technical_Report, Engineering_Doc, Summary & Manifest
+└── archive_unused/                        # Non-deleted archive of legacy/upstream/superseded files (ARCHIVE_INDEX.md)
+```
 
-## Results
-Experiments are performed for different image restoration tasks including, image dehazing, image deraining, image desnowing, image denoising, image super-resolution, single-image motion deblurring, defocus deblurring, image raindrop removal, low-light image enhancement and underwater image enhancement. 
+---
 
-<details>
-<summary><strong>Image Dehazing</strong> (click to expand) </summary>
-<p align='center'>
-<img src = "image/haze_result.png"> 
-</details>
+## Frozen Milestone 3 Summary (Untouched FIVES `N=200`)
 
-<details>
-<summary><strong>Image Deraining</strong> (click to expand) </summary>
-<p align='center'>
-<img src = "image/rain_result.png"> 
-</details>
+| System (`Frozen tau`) | Dice | Precision | Sensitivity | Thin Skel (`r <= 3.5px`) | Branch Recall | `clDice` | Mean CC |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Raw U-Net** (`0.50`) | `0.8133` | **`0.9266`** | `0.7566` | `33.33%` | `67.32%` | `0.8134` | `52.19` |
+| **Restored U-Net** (`0.50`) | `0.6927` | `0.7142` | `0.6824` | `29.68%` | `60.44%` | `0.6536` | `114.25` |
+| **Dual-Stream Hybrid** (`0.40`) | **`0.8474`** | `0.9007` | **`0.8242`** | **`43.52%`** | **`74.69%`** | **`0.8537`** | **`41.22`** |
 
-<details>
-<summary><strong>Image Desnowing</strong> (click to expand) </summary>
-<p align='center'>
-<img src = "image/snow.png"> 
-</details>
+- External HRF transfer (`N=45`, `40` upstream pretrain-exposed / `5` exploratory): `DualStreamUNet` improves thin skeleton sensitivity (`+9.78 pp` vs Raw), branch recall (`+6.59 pp`), `clDice` (`0.7745`), and component count (`-12.49` CCs/img) while trading `-8.54 pp` Precision and `-1.82 pp` Dice vs Raw U-Net (`min Wilcoxon p = 0.0625`, `Holm p = 0.375` on exploratory `N=5`).
 
-<details>
-<summary><strong>Image Super-resolution</strong> (click to expand) </summary>
-<p align='center'>
-<img src = "image/supp_super.png"> 
-</details>
+---
 
-<details>
-<summary><strong>Image Raindrop Removal</strong> (click to expand) </summary>
-<p align='center'>
-<img src = "image/raindrop.png"> 
-</details>
+## Quickstart Commands
 
-<details>
-<summary><strong>Single-Image Motion Deblurring</strong> (click to expand) </summary>
-<p align="center">
-<img src = "image/motion_deblur.png" >
-</details>
+```powershell
+# Run unit tests
+d:\SFHformer-FreqLab\.venv\python.exe -m pytest tests/ -q
 
-<details>
-<summary><strong>Defocus Deblurring</strong> (click to expand) </summary>
-<p align="center">
-<img src = "image/supp_defocus.png"> 
-</details>
+# Start RetinaScan Studio Flask Backend (:5001) & React UI (:3000)
+d:\SFHformer-FreqLab\.venv\python.exe -u scripts\serve_restore.py
+Set-Location frontend; npm run dev
 
+# Re-run Frozen Milestone 3 Dual-Stream Evaluation
+d:\SFHformer-FreqLab\.venv\python.exe scripts\evaluate_dual_stream_milestone3.py
 
-<details>
-<summary><strong>Image Denoising</strong> (click to expand) </summary>
-<p align="center">
-<img src = "image/supp_noise.png"> 
-</details>
+# Regenerate Phase 6 PDFs & DOCUMENTATION_MANIFEST.json
+d:\SFHformer-FreqLab\.venv\python.exe scripts\generate_phase6_documentation.py
+```
 
-<details>
-<summary><strong>Underwater Image Enhancement</strong> (click to expand) </summary>
-<p align="center">
-<img src = "image/underwater_result.png"> 
-</details>
+---
 
-<details>
-<summary><strong>Low-light Image Enhancement</strong> (click to expand) </summary>
-<p align="center">
-<img src = "image/lowlight.png"> 
-</details>
+## Documentation & Archived Files
 
-## Prepare Datasets
-
-**Deraining Datasets:** <a href="https://pan.baidu.com/s/1OCaSuwQRgkpm3kU55Hef0Q?pwd=sakm">Rain200L/Rain200H</a> <a href="https://pan.baidu.com/s/1zknuXnv5MR6yhS0I8u2uZg?pwd=h8vv">DDN-Data</a> <a href="https://pan.baidu.com/s/1RsDzu_lS-l2_FxdUnBarOQ?pwd=vxgq">DID-Data Train</a> <a href="https://pan.baidu.com/s/1sJUb6iwxAWOcoBBLn0iuUA?pwd=6bpj">DID-Data Test</a> <a href="https://pan.baidu.com/s/1ESuLn9a9G0QRD22MLxDPxw?pwd=bnqh">SPA-Data</a> <a href="https://pan.baidu.com/s/1zztcAht2aQje4hHcDnGynQ?pwd=2y7d">Raindrop</a>
-
-**Dehazing Datasets:** <a href="https://pan.baidu.com/s/11Pfl227viFijuw8jmAGcJw?pwd=m82m">ITS</a> <a href="https://pan.baidu.com/s/10N63st8dlzkGB5v-JjUULg?pwd=16ag">OTS</a> <a href="https://pan.baidu.com/s/1e8OG6aNgFSm9SHYQ2pvyuA?pwd=7xwn">O-HAZE</a> <a href="https://pan.baidu.com/s/1seuSmqRUAgC5zGXS9xtxPw?pwd=nyyt">NH-HAZE</a> <a href="https://pan.baidu.com/s/1hjysGvoVatWaY_FrmWeLmQ?pwd=xfu4">DENSE-HAZE</a> <a href="https://pan.baidu.com/s/1mcULooUYzGBRgqaEGFLQ0Q?pwd=779y">SOTS</a> 
-
-**Low-light Enhancement Datasets:** <a href="https://pan.baidu.com/s/1ZF4zAN7TVrj2wXLH9SdbNA?pwd=9cph">LOLv1</a> <a href="https://pan.baidu.com/s/1qmwGK2MT1rRZqsiChQi7AA?pwd=ujep">LOLv2</a> <a href="https://pan.baidu.com/s/1ALZjmzbcyt1gF5ZS-49B5A?pwd=zhcq">FiveK</a>
-
-**Motion Deblur Datasets:** <a href="https://pan.baidu.com/s/1ANXeNVc-sySlqgpOSaq9vQ?pwd=c5jc">Motion Blur(GoPro/HIDE/RealBlur-R/RealBlur-J)</a>
-
-**Defocus Deblur Datasets:** <a href="https://pan.baidu.com/s/1x1PPGvtmPpsxLBZtsT0cMA?pwd=ttj8">DPDD</a> 
-
-**Desnowing Datasets:** <a href="https://pan.baidu.com/s/1iUC3Y5Wn_rpy4P48x5hpVQ?pwd=352s">CSD</a> <a href="https://pan.baidu.com/s/14bGq_pvpUXv1k1wWJqZs4g?pwd=vcda">SRRS</a> <a href="https://pan.baidu.com/s/1TjR1VIn6MIqAD7UjguAmqg?pwd=4wi3">Snow100K</a> 
-
-**Underwater Enhancement Datasets:** <a href="https://pan.baidu.com/s/1V2tSOFkUmPIVPCAgxu5dBA?pwd=r6tf">UIEB</a> <a href="https://pan.baidu.com/s/1R_vzgn927IEu0vUAubWI-w?pwd=w3u7">LSUI</a>
-
-**Denoise Datasets:** <a href="https://pan.baidu.com/s/1DXDmcpFbEkYP-fpR7Vd8Bw?pwd=v1mj">SIDD</a>
-
-**Super-resolution Datasets:** <a href="https://pan.baidu.com/s/10OaDk8DttGzHO6Bh9nnPFw?pwd=68gw">DIV2K Set5 Set14 B100 Urban100 Manga109</a>
-
-## Pretrained model
-**Dehazing Datasets:** <a href="https://pan.baidu.com/s/1lfoOJLyCREXFkLHPJZJ9kQ?pwd=1v1a">ITS</a> <a href="https://pan.baidu.com/s/1BCFiHWsdkxGKpFbk68IHIQ?pwd=iz2n">OTS</a>
-
-**Low-light Enhancement Datasets:** <a href="https://pan.baidu.com/s/1_KU_VCdCBfnyG3_CsUSuBg?pwd=7w7a">LOLv2-r</a> <a href="https://pan.baidu.com/s/1685LqNiu_c09-b8p3g4BYg?pwd=mr89">LOLv2-s</a> 
-
-**Motion Deblur Datasets:** <a href="https://pan.baidu.com/s/1iyefA_-GZwCy1xJnNtENBw?pwd=w3gj">GoPro</a>
-
-## Visual Results
-<table>
-<thead>
-  <tr>
-    <th>Dehazing Dataset</th>
-    <th>SOTS-indoor</th>
-    <th>SOTS-outdoor</th>
-    <th>O-HAZE</th>
-    <th>NH-HAZE</th>
-    <th>DENSE-HAZE</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Baidu NetDisk</td>
-    <td> <a href="https://pan.baidu.com/s/1w3GhWD5yAd8N_JsJoXBtXA?pwd=8sj6">Download (8sj6)</a>  </td>
-    <td> <a href="https://pan.baidu.com/s/1A5B3hm39YrB51rvX3RWtVw?pwd=awnk">Download (awnk)</a>  </td>
-    <td> <a href="https://pan.baidu.com/s/1OMJDVsJoh4zrlvDWlZ2FNA?pwd=pfem">Download (pfem)</a>  </td>
-    <td> <a href="https://pan.baidu.com/s/1N75cBd3GIinW6NA_WxiRSg?pwd=e72s">Download (e72s)</a>  </td>
-    <td> <a href="https://pan.baidu.com/s/1rYXZn0dytP_On0NIRUwbPQ?pwd=r7p4">Download (r7p4)</a>  </td>
-  </tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-  <tr>
-    <th>Low-light Dataset</th>
-    <th>LOLv2-real</th>
-    <th>LOLV2-syn</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Baidu NetDisk</td>
-    <td> <a href="https://pan.baidu.com/s/1PvmOpyZEfvZ3BFvJYqaMfw?pwd=jqgh">Download (jqgh)</a>  </td>
-    <td> <a href="https://pan.baidu.com/s/1Ub4xxkVXft9cKw2dkR1Rgg?pwd=wy8i">Download (wy8i)</a>  </td>
-  </tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-  <tr>
-    <th>Underwater Dataset</th>
-    <th>UIEB</th>
-    <th>LSUI</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Baidu NetDisk</td>
-    <td> <a href="https://pan.baidu.com/s/1IyQF-Aa9nvsrcr-ZdRwR9w?pwd=7hxd">Download (7hxd)</a>  </td>
-    <td> <a href="https://pan.baidu.com/s/1evcyc_FOq6LyVCGp7LyWTQ?pwd=jd7m">Download (jd7m)</a>  </td>
-  </tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-  <tr>
-    <th>Motion Deblurring Dataset</th>
-    <th>GoPro</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Baidu NetDisk</td>
-    <td> <a href="https://pan.baidu.com/s/1QKJk9BTxP0GI5yyferFG5w?pwd=z9uv">Download (z9uv)</a>  </td>
-  </tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-  <tr>
-    <th>Desnowing Dataset</th>
-    <th>SRRS</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Baidu NetDisk</td>
-    <td> <a href="https://pan.baidu.com/s/1MAAIIOjWW_5JhzqQfakR0A?pwd=5899">Download (5899)</a>  </td>
-  </tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-  <tr>
-    <th>Raindrop Dataset</th>
-    <th>RainDrop</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Baidu NetDisk</td>
-    <td> <a href="https://pan.baidu.com/s/1jSGfmuNaPMXGweFEJO-D5g?pwd=4nay">Download (4nay)</a>  </td>
-  </tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-  <tr>
-    <th>Deraining Dataset</th>
-    <th>SPA-Data</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Baidu NetDisk</td>
-    <td> <a href="https://pan.baidu.com/s/11BsZhTnOmJPpDlgzQuThJQ?pwd=k8s6">Download (k8s6)</a>  </td>
-  </tr>
-</tbody>
-</table>
-
-## Supplementary Material
-
-For more details, see the supplementary material [here](https://static-content.springer.com/esm/chp%3A10.1007%2F978-3-031-72995-9_22/MediaObjects/635788_1_En_22_MOESM1_ESM.pdf)!
-
-## References
-
-Here is the BibTeX citation for the paper:
-
-      @inproceedings{jiang2024fast,
-        title={When Fast Fourier Transform Meets Transformer for Image Restoration},
-        author={Jiang, Xingyu and Zhang, Xiuhui and Gao, Ning and Deng, Yue},
-        booktitle={European Conference on Computer Vision},
-        pages={381--402},
-        year={2024},
-        organization={Springer}
-      }
-
-## Other Acknowledgment
-
-Part of our code is based on the [Dehazeformer](https://github.com/IDKiro/DehazeFormer) and [Restormer](https://github.com/swz30/Restormer).
-Thanks for their awesome work.
-
-## Contact
-
-If your submitted issue has not been noticed or there are further questions, please contact jxy33zrhd@buaa.edu.cn.
+- **Phase 6 Final Dossier**: See [`final_documentation/Final_Technical_Report.pdf`](final_documentation/Final_Technical_Report.pdf), [`final_documentation/Engineering_Documentation.pdf`](final_documentation/Engineering_Documentation.pdf), and [`final_documentation/Milestone3_Evaluation_Summary.pdf`](final_documentation/Milestone3_Evaluation_Summary.pdf).
+- **Non-Destructive Archive**: All unused upstream multi-task code (haze/rain/snow/blur/lowlight/underwater), DIV2K crops (`1.1 GB+`), early draft reports/diagrams, scratch checkpoints, and legacy scripts were moved without deletion to [`archive_unused/`](archive_unused/ARCHIVE_INDEX.md).

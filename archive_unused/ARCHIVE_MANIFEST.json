@@ -1,0 +1,811 @@
+{
+  "policy": "Zero files deleted; all legacy/upstream/superseded items relocated safely.",
+  "snapshot_preserved": "v3.1-phase5.2-verified",
+  "total_items_moved": 89,
+  "total_files_archived": 670,
+  "total_bytes_archived": 1193296453,
+  "missing_skipped": [],
+  "items": [
+    {
+      "original_path": "train_for_haze_its.py",
+      "archived_path": "archive_unused/legacy_upstream_tasks/train_for_haze_its.py",
+      "bucket": "legacy_upstream_tasks",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 6450,
+      "reason": "Upstream SFHformer ITS dehazing script (non-retinal)"
+    },
+    {
+      "original_path": "train_for_low_lol.py",
+      "archived_path": "archive_unused/legacy_upstream_tasks/train_for_low_lol.py",
+      "bucket": "legacy_upstream_tasks",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 6499,
+      "reason": "Upstream SFHformer LOL low-light script (non-retinal)"
+    },
+    {
+      "original_path": "train_for_motion_blur_gopro.py",
+      "archived_path": "archive_unused/legacy_upstream_tasks/train_for_motion_blur_gopro.py",
+      "bucket": "legacy_upstream_tasks",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 10113,
+      "reason": "Upstream SFHformer GoPro motion-blur script (non-retinal)"
+    },
+    {
+      "original_path": "train_for_rain_rain100H.py",
+      "archived_path": "archive_unused/legacy_upstream_tasks/train_for_rain_rain100H.py",
+      "bucket": "legacy_upstream_tasks",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 6416,
+      "reason": "Upstream SFHformer Rain100H script (non-retinal)"
+    },
+    {
+      "original_path": "train_for_rain_rain100L.py",
+      "archived_path": "archive_unused/legacy_upstream_tasks/train_for_rain_rain100L.py",
+      "bucket": "legacy_upstream_tasks",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 6449,
+      "reason": "Upstream SFHformer Rain100L script (non-retinal)"
+    },
+    {
+      "original_path": "train_for_raindrop.py",
+      "archived_path": "archive_unused/legacy_upstream_tasks/train_for_raindrop.py",
+      "bucket": "legacy_upstream_tasks",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 7479,
+      "reason": "Upstream SFHformer Raindrop script (non-retinal)"
+    },
+    {
+      "original_path": "train_for_underwater_lsui.py",
+      "archived_path": "archive_unused/legacy_upstream_tasks/train_for_underwater_lsui.py",
+      "bucket": "legacy_upstream_tasks",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 6621,
+      "reason": "Upstream SFHformer LSUI underwater script (non-retinal)"
+    },
+    {
+      "original_path": "dehazing",
+      "archived_path": "archive_unused/legacy_upstream_tasks/dehazing",
+      "bucket": "legacy_upstream_tasks",
+      "type": "directory",
+      "files_count": 18,
+      "size_bytes": 39588480,
+      "reason": "Upstream SFHformer dehazing module (non-retinal)"
+    },
+    {
+      "original_path": "lowlight",
+      "archived_path": "archive_unused/legacy_upstream_tasks/lowlight",
+      "bucket": "legacy_upstream_tasks",
+      "type": "directory",
+      "files_count": 16,
+      "size_bytes": 17020857,
+      "reason": "Upstream SFHformer low-light module (non-retinal)"
+    },
+    {
+      "original_path": "motion_blur",
+      "archived_path": "archive_unused/legacy_upstream_tasks/motion_blur",
+      "bucket": "legacy_upstream_tasks",
+      "type": "directory",
+      "files_count": 10,
+      "size_bytes": 76421,
+      "reason": "Upstream SFHformer motion-blur module (non-retinal)"
+    },
+    {
+      "original_path": "image",
+      "archived_path": "archive_unused/legacy_upstream_tasks/image",
+      "bucket": "legacy_upstream_tasks",
+      "type": "directory",
+      "files_count": 21,
+      "size_bytes": 6402677,
+      "reason": "Upstream README sample images (haze/rain/snow)"
+    },
+    {
+      "original_path": "configs",
+      "archived_path": "archive_unused/legacy_upstream_tasks/configs",
+      "bucket": "legacy_upstream_tasks",
+      "type": "directory",
+      "files_count": 25,
+      "size_bytes": 5283,
+      "reason": "Upstream multi-task JSON configs (non-retinal)"
+    },
+    {
+      "original_path": "datasets",
+      "archived_path": "archive_unused/legacy_upstream_tasks/datasets",
+      "bucket": "legacy_upstream_tasks",
+      "type": "directory",
+      "files_count": 11,
+      "size_bytes": 109918,
+      "reason": "Upstream non-retinal dataset loaders (ITS/LoL/Rain/Snow/etc.)"
+    },
+    {
+      "original_path": "dataset_spilt",
+      "archived_path": "archive_unused/legacy_upstream_tasks/dataset_spilt",
+      "bucket": "legacy_upstream_tasks",
+      "type": "directory",
+      "files_count": 7,
+      "size_bytes": 53718,
+      "reason": "Upstream LSUI/UIEB dataset split text files"
+    },
+    {
+      "original_path": "splits",
+      "archived_path": "archive_unused/legacy_upstream_tasks/splits",
+      "bucket": "legacy_upstream_tasks",
+      "type": "directory",
+      "files_count": 5,
+      "size_bytes": 6216,
+      "reason": "Legacy DIV2K split index files"
+    },
+    {
+      "original_path": "runs",
+      "archived_path": "archive_unused/legacy_upstream_tasks/runs",
+      "bucket": "legacy_upstream_tasks",
+      "type": "directory",
+      "files_count": 0,
+      "size_bytes": 0,
+      "reason": "Empty upstream TensorBoard/runs folder"
+    },
+    {
+      "original_path": "ARCHITECTURE_AND_SYSTEM_DESIGN_EXPLAINED.html",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/ARCHITECTURE_AND_SYSTEM_DESIGN_EXPLAINED.html",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 0,
+      "reason": "Superseded draft HTML (0 KB)"
+    },
+    {
+      "original_path": "ARCHITECTURE_AND_SYSTEM_DESIGN_EXPLAINED.md",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/ARCHITECTURE_AND_SYSTEM_DESIGN_EXPLAINED.md",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 0,
+      "reason": "Superseded draft MD (0 KB)"
+    },
+    {
+      "original_path": "ARCHITECTURE_AND_SYSTEM_DESIGN_EXPLAINED.pdf",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/ARCHITECTURE_AND_SYSTEM_DESIGN_EXPLAINED.pdf",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 2142657,
+      "reason": "Superseded pre-DualStream architecture PDF"
+    },
+    {
+      "original_path": "EXHAUSTIVE_ARCHITECTURE_AND_PIPELINE_DEEP_DIVE.html",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/EXHAUSTIVE_ARCHITECTURE_AND_PIPELINE_DEEP_DIVE.html",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 20003,
+      "reason": "Superseded deep-dive draft HTML"
+    },
+    {
+      "original_path": "EXHAUSTIVE_ARCHITECTURE_AND_PIPELINE_DEEP_DIVE.md",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/EXHAUSTIVE_ARCHITECTURE_AND_PIPELINE_DEEP_DIVE.md",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 73248,
+      "reason": "Superseded deep-dive draft MD"
+    },
+    {
+      "original_path": "EXHAUSTIVE_ARCHITECTURE_AND_PIPELINE_DEEP_DIVE.pdf",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/EXHAUSTIVE_ARCHITECTURE_AND_PIPELINE_DEEP_DIVE.pdf",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 2852142,
+      "reason": "Superseded deep-dive draft PDF"
+    },
+    {
+      "original_path": "FINAL_PROJECT_VERIFIED_REPORT.html",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/FINAL_PROJECT_VERIFIED_REPORT.html",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 14723,
+      "reason": "Superseded pre-Phase6 HTML report"
+    },
+    {
+      "original_path": "FINAL_PROJECT_VERIFIED_REPORT.md",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/FINAL_PROJECT_VERIFIED_REPORT.md",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 21546,
+      "reason": "Superseded pre-Phase6 MD report"
+    },
+    {
+      "original_path": "FINAL_PROJECT_VERIFIED_REPORT.pdf",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/FINAL_PROJECT_VERIFIED_REPORT.pdf",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 2846699,
+      "reason": "Superseded pre-Phase6 PDF report"
+    },
+    {
+      "original_path": "PROJECT_REPORT_COMPLETE.md",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/PROJECT_REPORT_COMPLETE.md",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 28673,
+      "reason": "Superseded early FreqLab project report MD"
+    },
+    {
+      "original_path": "PROJECT_REPORT_SFHFORMER_RETINA.pdf",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/PROJECT_REPORT_SFHFORMER_RETINA.pdf",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 3407167,
+      "reason": "Superseded early SFHformer-Retina report PDF"
+    },
+    {
+      "original_path": "MASTER_ARCHITECTURE_DIAGRAMS.pdf",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/MASTER_ARCHITECTURE_DIAGRAMS.pdf",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 105704,
+      "reason": "Superseded diagram PDF (replaced by demo_package/diagrams/diag_1..5.png)"
+    },
+    {
+      "original_path": "MASTER_DIAGRAM_1_TRAINING_AND_ARCHITECTURE.png",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/MASTER_DIAGRAM_1_TRAINING_AND_ARCHITECTURE.png",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 1476006,
+      "reason": "Superseded root diagram PNG"
+    },
+    {
+      "original_path": "MASTER_DIAGRAM_2_IMAGE_PROCESSING_AND_DIAGNOSTICS.png",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/MASTER_DIAGRAM_2_IMAGE_PROCESSING_AND_DIAGNOSTICS.png",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 1252197,
+      "reason": "Superseded root diagram PNG"
+    },
+    {
+      "original_path": "SFHformer_Architecture_Diagrams.pdf",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/SFHformer_Architecture_Diagrams.pdf",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 96933,
+      "reason": "Superseded diagram PDF"
+    },
+    {
+      "original_path": "diagram_1.png",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/diagram_1.png",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 255560,
+      "reason": "Superseded early FreqLab diagram PNG"
+    },
+    {
+      "original_path": "diagram_2.png",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/diagram_2.png",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 241461,
+      "reason": "Superseded early FreqLab diagram PNG"
+    },
+    {
+      "original_path": "diagram_3.png",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/diagram_3.png",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 361723,
+      "reason": "Superseded early FreqLab diagram PNG"
+    },
+    {
+      "original_path": "docs",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/docs",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "directory",
+      "files_count": 4,
+      "size_bytes": 2089008,
+      "reason": "Legacy pre-DualStream diagram set (docs/diagrams/arch_diag1..4.png)"
+    },
+    {
+      "original_path": "HYPOTHESES.md",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/HYPOTHESES.md",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 4208,
+      "reason": "Early Phase-1 hypotheses scratchpad"
+    },
+    {
+      "original_path": "NOTES.md",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/NOTES.md",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 3869,
+      "reason": "Early development notes"
+    },
+    {
+      "original_path": "RESULTS.md",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/RESULTS.md",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 2907,
+      "reason": "Early DIV2K spectral results notes"
+    },
+    {
+      "original_path": "README_FREQLAB.md",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/README_FREQLAB.md",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 4326,
+      "reason": "Legacy standalone FreqLab README (consolidated into root README.md)"
+    },
+    {
+      "original_path": "README_RETINASCAN.md",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/README_RETINASCAN.md",
+      "bucket": "superseded_docs_and_diagrams",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 4655,
+      "reason": "Legacy standalone RetinaScan README (consolidated into root README.md)"
+    },
+    {
+      "original_path": "README.md",
+      "archived_path": "archive_unused/superseded_docs_and_diagrams/upstream_sfhformer/README.md",
+      "bucket": "superseded_docs_and_diagrams/upstream_sfhformer",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 11202,
+      "reason": "Original Beihang ECCV24 SFHformer README (replaced cleanly at root)"
+    },
+    {
+      "original_path": "scripts/auto_pipeline.ps1",
+      "archived_path": "archive_unused/legacy_scripts/scripts/auto_pipeline.ps1",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 1679,
+      "reason": "Early DIV2K FreqLab automation script"
+    },
+    {
+      "original_path": "scripts/benchmark_speedup_experiments.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/benchmark_speedup_experiments.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 12274,
+      "reason": "One-off PyTorch compile/AMP speedup benchmark"
+    },
+    {
+      "original_path": "scripts/compile_exhaustive_deep_dive.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/compile_exhaustive_deep_dive.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 24360,
+      "reason": "Replaced by scripts/generate_phase6_documentation.py"
+    },
+    {
+      "original_path": "scripts/download_fives.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/download_fives.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 2260,
+      "reason": "One-time dataset fetcher (data/fives/ already ingested)"
+    },
+    {
+      "original_path": "scripts/frangi_check.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/frangi_check.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 1181,
+      "reason": "Superseded by scripts/baseline_frangi.py"
+    },
+    {
+      "original_path": "scripts/generate_architecture_explanation_pdf.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/generate_architecture_explanation_pdf.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 59002,
+      "reason": "Replaced by generate_phase5_3_diagrams.py & generate_phase6_documentation.py"
+    },
+    {
+      "original_path": "scripts/generate_diagrams.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/generate_diagrams.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 20382,
+      "reason": "Replaced by scripts/generate_phase5_3_diagrams.py"
+    },
+    {
+      "original_path": "scripts/generate_master_diagrams.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/generate_master_diagrams.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 35712,
+      "reason": "Replaced by scripts/generate_phase5_3_diagrams.py"
+    },
+    {
+      "original_path": "scripts/generate_mega_retina_crops.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/generate_mega_retina_crops.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 10307,
+      "reason": "Legacy mega-crop prep (superseded by prepare_fives_dataset.py)"
+    },
+    {
+      "original_path": "scripts/generate_pdf_report.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/generate_pdf_report.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 17238,
+      "reason": "Replaced by scripts/generate_phase6_documentation.py"
+    },
+    {
+      "original_path": "scripts/make_crops.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/make_crops.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 6265,
+      "reason": "DIV2K crop generator (non-retinal)"
+    },
+    {
+      "original_path": "scripts/plot_results.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/plot_results.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 7647,
+      "reason": "Early DIV2K sweep plotter"
+    },
+    {
+      "original_path": "scripts/run_frangi_experiments_cd.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/run_frangi_experiments_cd.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 8375,
+      "reason": "Superseded by baseline_frangi.py & evaluate_milestone3.py"
+    },
+    {
+      "original_path": "scripts/sanity_check.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/sanity_check.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 5125,
+      "reason": "Early FreqLab synthetic sanity check"
+    },
+    {
+      "original_path": "scripts/spectrum_figs.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/spectrum_figs.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 6397,
+      "reason": "Early DIV2K spectrum plot generator"
+    },
+    {
+      "original_path": "scripts/sweep.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/sweep.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 9047,
+      "reason": "Early DIV2K radial frequency sweep script"
+    },
+    {
+      "original_path": "scripts/test_samples.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/test_samples.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 989,
+      "reason": "Early quick-check sample script"
+    },
+    {
+      "original_path": "scripts/train_freq.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/train_freq.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 9725,
+      "reason": "Early DIV2K R1/R2 frequency-band training script"
+    },
+    {
+      "original_path": "scripts/train_mega_retina.py",
+      "archived_path": "archive_unused/legacy_scripts/scripts/train_mega_retina.py",
+      "bucket": "legacy_scripts",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 8372,
+      "reason": "Superseded by scripts/train_fives_retina.py"
+    },
+    {
+      "original_path": "checkpoints/smoke_test",
+      "archived_path": "archive_unused/scratch_checkpoints/checkpoints/smoke_test",
+      "bucket": "scratch_checkpoints",
+      "type": "directory",
+      "files_count": 3,
+      "size_bytes": 545,
+      "reason": "Early training smoke-test checkpoint logs"
+    },
+    {
+      "original_path": "checkpoints/speed_benchmark",
+      "archived_path": "archive_unused/scratch_checkpoints/checkpoints/speed_benchmark",
+      "bucket": "scratch_checkpoints",
+      "type": "directory",
+      "files_count": 5,
+      "size_bytes": 142179778,
+      "reason": "Early AMP speedup benchmark checkpoint"
+    },
+    {
+      "original_path": "results/do_no_harm.csv",
+      "archived_path": "archive_unused/legacy_freq_results/results/do_no_harm.csv",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 230,
+      "reason": "Early DIV2K radial gate CSV"
+    },
+    {
+      "original_path": "results/freq_response.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/freq_response.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 155639,
+      "reason": "Early DIV2K frequency response figure"
+    },
+    {
+      "original_path": "results/pipeline_complete.txt",
+      "archived_path": "archive_unused/legacy_freq_results/results/pipeline_complete.txt",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 86,
+      "reason": "Early DIV2K completion stamp"
+    },
+    {
+      "original_path": "results/radial_error_in_band_k20.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/radial_error_in_band_k20.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 89767,
+      "reason": "Early DIV2K radial error figure"
+    },
+    {
+      "original_path": "results/radial_error_out_of_band_k80.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/radial_error_out_of_band_k80.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 90010,
+      "reason": "Early DIV2K radial error figure"
+    },
+    {
+      "original_path": "results/spectrum_in_band_k20.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/spectrum_in_band_k20.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 4922472,
+      "reason": "Early DIV2K spectrum figure"
+    },
+    {
+      "original_path": "results/spectrum_out_of_band_k80.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/spectrum_out_of_band_k80.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 4903861,
+      "reason": "Early DIV2K spectrum figure"
+    },
+    {
+      "original_path": "results/speedup_benchmark_results.json",
+      "archived_path": "archive_unused/legacy_freq_results/results/speedup_benchmark_results.json",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 2040,
+      "reason": "One-off GPU speedup benchmark JSON"
+    },
+    {
+      "original_path": "results/summary_band.csv",
+      "archived_path": "archive_unused/legacy_freq_results/results/summary_band.csv",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 531,
+      "reason": "Early DIV2K band summary CSV"
+    },
+    {
+      "original_path": "results/sweep.csv",
+      "archived_path": "archive_unused/legacy_freq_results/results/sweep.csv",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 3492794,
+      "reason": "Early DIV2K frequency sweep CSV"
+    },
+    {
+      "original_path": "data/DIV2K_valid_HR.zip",
+      "archived_path": "archive_unused/legacy_div2k_data/data/DIV2K_valid_HR.zip",
+      "bucket": "legacy_div2k_data",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 448993893,
+      "reason": "DIV2K validation archive (438 MB, non-retinal)"
+    },
+    {
+      "original_path": "data/crops",
+      "archived_path": "archive_unused/legacy_div2k_data/data/crops",
+      "bucket": "legacy_div2k_data",
+      "type": "directory",
+      "files_count": 370,
+      "size_bytes": 57469459,
+      "reason": "DIV2K image crops (non-retinal)"
+    },
+    {
+      "original_path": "data/raw",
+      "archived_path": "archive_unused/legacy_div2k_data/data/raw",
+      "bucket": "legacy_div2k_data",
+      "type": "directory",
+      "files_count": 100,
+      "size_bytes": 449507452,
+      "reason": "Unpacked DIV2K_valid_HR images (non-retinal)"
+    },
+    {
+      "original_path": "results/heatmap1_freq_orient_gaussian_s1.0.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/heatmap1_freq_orient_gaussian_s1.0.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 42513,
+      "reason": "Early DIV2K spectral orientation/amplitude heatmap"
+    },
+    {
+      "original_path": "results/heatmap1_freq_orient_gaussian_s2.0.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/heatmap1_freq_orient_gaussian_s2.0.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 42743,
+      "reason": "Early DIV2K spectral orientation/amplitude heatmap"
+    },
+    {
+      "original_path": "results/heatmap1_freq_orient_identity.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/heatmap1_freq_orient_identity.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 48264,
+      "reason": "Early DIV2K spectral orientation/amplitude heatmap"
+    },
+    {
+      "original_path": "results/heatmap1_freq_orient_median_3.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/heatmap1_freq_orient_median_3.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 42885,
+      "reason": "Early DIV2K spectral orientation/amplitude heatmap"
+    },
+    {
+      "original_path": "results/heatmap1_freq_orient_notch.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/heatmap1_freq_orient_notch.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 43477,
+      "reason": "Early DIV2K spectral orientation/amplitude heatmap"
+    },
+    {
+      "original_path": "results/heatmap1_freq_orient_r1_baseline.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/heatmap1_freq_orient_r1_baseline.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 46041,
+      "reason": "Early DIV2K spectral orientation/amplitude heatmap"
+    },
+    {
+      "original_path": "results/heatmap1_freq_orient_r2_gated.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/heatmap1_freq_orient_r2_gated.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 46781,
+      "reason": "Early DIV2K spectral orientation/amplitude heatmap"
+    },
+    {
+      "original_path": "results/heatmap2_freq_amp_gaussian_s1.0.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/heatmap2_freq_amp_gaussian_s1.0.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 41521,
+      "reason": "Early DIV2K spectral orientation/amplitude heatmap"
+    },
+    {
+      "original_path": "results/heatmap2_freq_amp_gaussian_s2.0.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/heatmap2_freq_amp_gaussian_s2.0.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 41195,
+      "reason": "Early DIV2K spectral orientation/amplitude heatmap"
+    },
+    {
+      "original_path": "results/heatmap2_freq_amp_identity.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/heatmap2_freq_amp_identity.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 44926,
+      "reason": "Early DIV2K spectral orientation/amplitude heatmap"
+    },
+    {
+      "original_path": "results/heatmap2_freq_amp_median_3.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/heatmap2_freq_amp_median_3.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 39862,
+      "reason": "Early DIV2K spectral orientation/amplitude heatmap"
+    },
+    {
+      "original_path": "results/heatmap2_freq_amp_notch.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/heatmap2_freq_amp_notch.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 43211,
+      "reason": "Early DIV2K spectral orientation/amplitude heatmap"
+    },
+    {
+      "original_path": "results/heatmap2_freq_amp_r1_baseline.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/heatmap2_freq_amp_r1_baseline.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 43794,
+      "reason": "Early DIV2K spectral orientation/amplitude heatmap"
+    },
+    {
+      "original_path": "results/heatmap2_freq_amp_r2_gated.png",
+      "archived_path": "archive_unused/legacy_freq_results/results/heatmap2_freq_amp_r2_gated.png",
+      "bucket": "legacy_freq_results",
+      "type": "file",
+      "files_count": 1,
+      "size_bytes": 44132,
+      "reason": "Early DIV2K spectral orientation/amplitude heatmap"
+    }
+  ]
+}

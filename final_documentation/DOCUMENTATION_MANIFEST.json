@@ -1,0 +1,45 @@
+{
+  "git_snapshot_tag": "v3.1-phase5.2-verified",
+  "git_commit": "42ac0565d1d1517ef5bad9fdc1f392608272db1b",
+  "checkpoint_naming_resolution": {
+    "sfhformer_alias_in_evaluate_milestone3": "checkpoints/fives_retina_finetune/best.pth",
+    "sha256": "d74e267c6ac664686528d6285564fcefcfddc97db1c1f0f676cc00ab5a49563c"
+  },
+  "deliverables": {
+    "Final_Technical_Report.pdf": {
+      "pdf_path": "D:\\SFHformer-FreqLab\\final_documentation\\Final_Technical_Report.pdf",
+      "pdf_pages": 27,
+      "pdf_size_bytes": 14108598,
+      "pdf_sha256": "34102c2f376ab21a0d846392d63c2f87b5fbe45b924e315a2e2160b54a2d8ad6",
+      "markdown_path": "D:\\SFHformer-FreqLab\\final_documentation\\Final_Technical_Report.md",
+      "markdown_sha256": "f88faa49d8e028ba0b539bd6235272c3e3f53252ceaf6bd8b55e3dd45df4e3ab"
+    },
+    "Engineering_Documentation.pdf": {
+      "pdf_path": "D:\\SFHformer-FreqLab\\final_documentation\\Engineering_Documentation.pdf",
+      "pdf_pages": 8,
+      "pdf_size_bytes": 3121659,
+      "pdf_sha256": "ebc8a29e429d4935a18a67ebf0d2e903b1508b6a581d2fc491683d7812d98ecc",
+      "markdown_path": "D:\\SFHformer-FreqLab\\final_documentation\\Engineering_Documentation.md",
+      "markdown_sha256": "7ced47b8b8b390a8fef7c59858cff61a134ea9d57177a2031e11ddea4836f442"
+    },
+    "Milestone3_Evaluation_Summary.pdf": {
+      "pdf_path": "D:\\SFHformer-FreqLab\\final_documentation\\Milestone3_Evaluation_Summary.pdf",
+      "pdf_pages": 6,
+      "pdf_size_bytes": 10861613,
+      "pdf_sha256": "872fc8a3e8fece891a569adb90bd8b2e5409b1d1cd452e5203a8a0be82af23a4",
+      "markdown_path": "D:\\SFHformer-FreqLab\\final_documentation\\Milestone3_Evaluation_Summary.md",
+      "markdown_sha256": "af97a1dc778b377c003cecfa0a7bd8db54942d333fd8dbd40bbd9cf4f2759690"
+    }
+  },
+  "embedded_visual_assets_sha256": {
+    "diag_1_sfhformer_macro.png": "3498b06e7aa99a1e84d2fd8f13a59ca6cd665d08cff186cef9d1462a2aec969d",
+    "diag_2_sfh_block_detail.png": "f47b81f3195ddf102e620c27e9585d8e4612ae1f4b209056bd181064810fcef1",
+    "diag_3_single_unet.png": "d9f9107ad7e694809bdec2a83c7d82330eeca3977ab4856af730b3f3fd84fb4e",
+    "diag_4_dual_stream_hybrid_unet.png": "d2340a4b94c0546acb7732d92bb0494665061842aba4fcd31d61c1363189624a",
+    "diag_5_combined_retinascan_system.png": "68aba098cd5d2577b63eb5fd5c3c3d658bca1f29e21ccc90e5f9883184314b52",
+    "fives_test_disease_stratified_demo.png": "f0f209e1fff404b29f4b94ef99e054ae50d60a76d879670abcb23e4732598f5c",
+    "hrf_transfer_unexposed_demo.png": "c41840e6f03a92c5c1f5a2ffd22cec19b958bfa61fdd1b81e0f475025bbaefe2",
+    "phase5_2_ui_tab1_fusion.png": "d917d1ccd19fb7a0eed17af37d8949b09b23b2ca1ce59f1d77bb90c10019ad27",
+    "phase5_2_ui_tab2_benchmark.png": "0a853ff506a6b036c3ab93f9e46febaef0c2d983b6c0bf31564ebd29f4f5a63e"
+  }
+}
