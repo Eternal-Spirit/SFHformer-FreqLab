@@ -1,0 +1,159 @@
+{
+  "terminology_correction": "duplicate-free image-level validation",
+  "hrf_tiling": {
+    "full_resolution": [
+      2336,
+      3504
+    ],
+    "tile_size": 512,
+    "stride": 384,
+    "tiles_per_image": 54,
+    "grid_rows": 6,
+    "grid_cols": 9,
+    "zero_coverage_pixels": 0,
+    "min_coverage": 1,
+    "max_coverage": 4,
+    "reconstruction_mae": 1.0223519808505444e-08,
+    "max_reconstruction_error": 1.7881393432617188e-07,
+    "coverage_heatmap": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\final_resolution\\hrf_3504x2336_tile_coverage_heatmap.png",
+    "manifest_path": "D:\\SFHformer-FreqLab\\data\\hrf\\hrf_tile_manifest_512.json"
+  },
+  "complete_vessel_calibers": {
+    "fives": {
+      "train": {
+        "mask_count": 540,
+        "total_skeleton_pixels": 12116584,
+        "thin_le_3_5px_pct": 2.38,
+        "medium_3_5_to_7px_pct": 15.53,
+        "thick_gt_7px_pct": 82.1
+      },
+      "val": {
+        "mask_count": 60,
+        "total_skeleton_pixels": 1335135,
+        "thin_le_3_5px_pct": 2.43,
+        "medium_3_5_to_7px_pct": 15.49,
+        "thick_gt_7px_pct": 82.09
+      },
+      "test": {
+        "mask_count": 200,
+        "total_skeleton_pixels": 4326234,
+        "thin_le_3_5px_pct": 2.51,
+        "medium_3_5_to_7px_pct": 15.13,
+        "thick_gt_7px_pct": 82.36
+      },
+      "overall_800_images": {
+        "mask_count": 800,
+        "total_skeleton_pixels": 17777953,
+        "thin_le_3_5px_pct": 2.41,
+        "medium_3_5_to_7px_pct": 15.43,
+        "thick_gt_7px_pct": 82.16
+      },
+      "disease_breakdown": {
+        "N": {
+          "total_skeleton_pixels": 5215508,
+          "thin_pct": 1.62,
+          "medium_pct": 13.88,
+          "thick_pct": 84.5
+        },
+        "A": {
+          "total_skeleton_pixels": 4571557,
+          "thin_pct": 2.61,
+          "medium_pct": 17.58,
+          "thick_pct": 79.81
+        },
+        "D": {
+          "total_skeleton_pixels": 3986176,
+          "thin_pct": 2.72,
+          "medium_pct": 14.49,
+          "thick_pct": 82.79
+        },
+        "G": {
+          "total_skeleton_pixels": 4004712,
+          "thin_pct": 2.91,
+          "medium_pct": 15.92,
+          "thick_pct": 81.16
+        }
+      }
+    },
+    "hrf": {
+      "mask_count": 45,
+      "total_skeleton_pixels": 3065568,
+      "thin_le_3_5px_pct": 13.51,
+      "medium_3_5_to_7px_pct": 36.42,
+      "thick_gt_7px_pct": 50.06,
+      "category_breakdown": {
+        "healthy": {
+          "total_skeleton_pixels": 1001838,
+          "thin_pct": 1.34,
+          "medium_pct": 34.73,
+          "thick_pct": 63.93
+        },
+        "dr": {
+          "total_skeleton_pixels": 1007299,
+          "thin_pct": 19.43,
+          "medium_pct": 35.74,
+          "thick_pct": 44.82
+        },
+        "glaucoma": {
+          "total_skeleton_pixels": 1056431,
+          "thin_pct": 19.41,
+          "medium_pct": 38.68,
+          "thick_pct": 41.91
+        }
+      }
+    }
+  },
+  "phash_catalog": {
+    "total": 112,
+    "summary": {
+      "0": {
+        "total_pairs": 1,
+        "same_disease_pairs": 0,
+        "different_disease_pairs": 1
+      },
+      "1": {
+        "total_pairs": 2,
+        "same_disease_pairs": 1,
+        "different_disease_pairs": 1
+      },
+      "2": {
+        "total_pairs": 6,
+        "same_disease_pairs": 1,
+        "different_disease_pairs": 5
+      },
+      "3": {
+        "total_pairs": 23,
+        "same_disease_pairs": 10,
+        "different_disease_pairs": 13
+      },
+      "4": {
+        "total_pairs": 80,
+        "same_disease_pairs": 17,
+        "different_disease_pairs": 63
+      }
+    },
+    "catalog_file": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\final_resolution\\phash_flagged_pairs.json"
+  },
+  "glaucoma_optic_cup_investigation": [
+    {
+      "image_id": "train_361_G",
+      "optic_cup_center": [
+        498,
+        1506
+      ],
+      "clipped_pixels_in_cup": 6756,
+      "diagnostic_image": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\final_resolution\\zoomed_optic_cup_train_361_G.png",
+      "clinical_mechanism": "Deep glaucomatous optic cupping creates profound regional shadowing where vessel branches emerge. Luminance thresholding correctly identifies extreme darkness as background; dilating the mask would artificially bridge into dark camera sensor edges."
+    },
+    {
+      "image_id": "train_353_G",
+      "optic_cup_center": [
+        1087,
+        1435
+      ],
+      "clipped_pixels_in_cup": 0,
+      "diagnostic_image": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\final_resolution\\zoomed_optic_cup_train_353_G.png",
+      "clinical_mechanism": "Deep glaucomatous optic cupping creates profound regional shadowing where vessel branches emerge. Luminance thresholding correctly identifies extreme darkness as background; dilating the mask would artificially bridge into dark camera sensor edges."
+    }
+  ]
+}

@@ -1,0 +1,332 @@
+{
+  "experiment_c": {
+    "best_threshold": 0.05,
+    "best_metrics": {
+      "threshold": 0.05,
+      "clean_n59": {
+        "dice": 0.0456,
+        "iou": 0.0249,
+        "sensitivity": 0.0351,
+        "specificity": 0.9857,
+        "precision": 0.1278,
+        "thin_vessel_sensitivity": 0.028,
+        "vascular_continuity_ratio": 1163.71
+      },
+      "full_n60": {
+        "dice": 0.0448,
+        "iou": 0.0245,
+        "sensitivity": 0.0345,
+        "specificity": 0.986,
+        "precision": 0.1257,
+        "thin_vessel_sensitivity": 0.0276,
+        "vascular_continuity_ratio": 1144.53
+      }
+    },
+    "all_thresholds": {
+      "thresh_0.05": {
+        "threshold": 0.05,
+        "clean_n59": {
+          "dice": 0.0456,
+          "iou": 0.0249,
+          "sensitivity": 0.0351,
+          "specificity": 0.9857,
+          "precision": 0.1278,
+          "thin_vessel_sensitivity": 0.028,
+          "vascular_continuity_ratio": 1163.71
+        },
+        "full_n60": {
+          "dice": 0.0448,
+          "iou": 0.0245,
+          "sensitivity": 0.0345,
+          "specificity": 0.986,
+          "precision": 0.1257,
+          "thin_vessel_sensitivity": 0.0276,
+          "vascular_continuity_ratio": 1144.53
+        }
+      },
+      "thresh_0.10": {
+        "threshold": 0.1,
+        "clean_n59": {
+          "dice": 0.0219,
+          "iou": 0.0115,
+          "sensitivity": 0.013,
+          "specificity": 0.9957,
+          "precision": 0.0786,
+          "thin_vessel_sensitivity": 0.0088,
+          "vascular_continuity_ratio": 490.1
+        },
+        "full_n60": {
+          "dice": 0.0215,
+          "iou": 0.0113,
+          "sensitivity": 0.0128,
+          "specificity": 0.9958,
+          "precision": 0.0772,
+          "thin_vessel_sensitivity": 0.0086,
+          "vascular_continuity_ratio": 481.93
+        }
+      },
+      "thresh_0.15": {
+        "threshold": 0.15,
+        "clean_n59": {
+          "dice": 0.0109,
+          "iou": 0.0056,
+          "sensitivity": 0.0059,
+          "specificity": 0.9982,
+          "precision": 0.0807,
+          "thin_vessel_sensitivity": 0.0033,
+          "vascular_continuity_ratio": 234.59
+        },
+        "full_n60": {
+          "dice": 0.0107,
+          "iou": 0.0055,
+          "sensitivity": 0.0058,
+          "specificity": 0.9982,
+          "precision": 0.0793,
+          "thin_vessel_sensitivity": 0.0033,
+          "vascular_continuity_ratio": 230.68
+        }
+      },
+      "thresh_0.20": {
+        "threshold": 0.2,
+        "clean_n59": {
+          "dice": 0.0057,
+          "iou": 0.0029,
+          "sensitivity": 0.003,
+          "specificity": 0.9991,
+          "precision": 0.0831,
+          "thin_vessel_sensitivity": 0.0016,
+          "vascular_continuity_ratio": 125.77
+        },
+        "full_n60": {
+          "dice": 0.0056,
+          "iou": 0.0028,
+          "sensitivity": 0.0029,
+          "specificity": 0.9991,
+          "precision": 0.0817,
+          "thin_vessel_sensitivity": 0.0016,
+          "vascular_continuity_ratio": 123.68
+        }
+      },
+      "thresh_0.25": {
+        "threshold": 0.25,
+        "clean_n59": {
+          "dice": 0.0031,
+          "iou": 0.0016,
+          "sensitivity": 0.0016,
+          "specificity": 0.9994,
+          "precision": 0.0851,
+          "thin_vessel_sensitivity": 0.0008,
+          "vascular_continuity_ratio": 75.93
+        },
+        "full_n60": {
+          "dice": 0.003,
+          "iou": 0.0015,
+          "sensitivity": 0.0016,
+          "specificity": 0.9995,
+          "precision": 0.0836,
+          "thin_vessel_sensitivity": 0.0008,
+          "vascular_continuity_ratio": 74.66
+        }
+      },
+      "thresh_0.30": {
+        "threshold": 0.3,
+        "clean_n59": {
+          "dice": 0.0017,
+          "iou": 0.0009,
+          "sensitivity": 0.0009,
+          "specificity": 0.9996,
+          "precision": 0.0862,
+          "thin_vessel_sensitivity": 0.0004,
+          "vascular_continuity_ratio": 50.14
+        },
+        "full_n60": {
+          "dice": 0.0017,
+          "iou": 0.0008,
+          "sensitivity": 0.0008,
+          "specificity": 0.9996,
+          "precision": 0.0847,
+          "thin_vessel_sensitivity": 0.0004,
+          "vascular_continuity_ratio": 49.3
+        }
+      }
+    }
+  },
+  "experiment_d": {
+    "best_threshold": 0.05,
+    "best_metrics": {
+      "threshold": 0.05,
+      "clean_n59": {
+        "dice": 0.0009,
+        "iou": 0.0005,
+        "sensitivity": 0.0005,
+        "specificity": 0.9978,
+        "precision": 0.0334,
+        "thin_vessel_sensitivity": 0.0013,
+        "vascular_continuity_ratio": 71.79
+      },
+      "full_n60": {
+        "dice": 0.0011,
+        "iou": 0.0005,
+        "sensitivity": 0.0006,
+        "specificity": 0.9978,
+        "precision": 0.035,
+        "thin_vessel_sensitivity": 0.0014,
+        "vascular_continuity_ratio": 72.61
+      }
+    },
+    "all_thresholds": {
+      "thresh_0.05": {
+        "threshold": 0.05,
+        "clean_n59": {
+          "dice": 0.0009,
+          "iou": 0.0005,
+          "sensitivity": 0.0005,
+          "specificity": 0.9978,
+          "precision": 0.0334,
+          "thin_vessel_sensitivity": 0.0013,
+          "vascular_continuity_ratio": 71.79
+        },
+        "full_n60": {
+          "dice": 0.0011,
+          "iou": 0.0005,
+          "sensitivity": 0.0006,
+          "specificity": 0.9978,
+          "precision": 0.035,
+          "thin_vessel_sensitivity": 0.0014,
+          "vascular_continuity_ratio": 72.61
+        }
+      },
+      "thresh_0.10": {
+        "threshold": 0.1,
+        "clean_n59": {
+          "dice": 0.0001,
+          "iou": 0.0001,
+          "sensitivity": 0.0001,
+          "specificity": 0.9996,
+          "precision": 0.0053,
+          "thin_vessel_sensitivity": 0.0001,
+          "vascular_continuity_ratio": 25.18
+        },
+        "full_n60": {
+          "dice": 0.0002,
+          "iou": 0.0001,
+          "sensitivity": 0.0001,
+          "specificity": 0.9996,
+          "precision": 0.009,
+          "thin_vessel_sensitivity": 0.0001,
+          "vascular_continuity_ratio": 24.94
+        }
+      },
+      "thresh_0.15": {
+        "threshold": 0.15,
+        "clean_n59": {
+          "dice": 0.0001,
+          "iou": 0.0,
+          "sensitivity": 0.0,
+          "specificity": 0.9999,
+          "precision": 0.0037,
+          "thin_vessel_sensitivity": 0.0,
+          "vascular_continuity_ratio": 10.2
+        },
+        "full_n60": {
+          "dice": 0.0001,
+          "iou": 0.0,
+          "sensitivity": 0.0,
+          "specificity": 0.9999,
+          "precision": 0.0047,
+          "thin_vessel_sensitivity": 0.0,
+          "vascular_continuity_ratio": 10.1
+        }
+      },
+      "thresh_0.20": {
+        "threshold": 0.2,
+        "clean_n59": {
+          "dice": 0.0,
+          "iou": 0.0,
+          "sensitivity": 0.0,
+          "specificity": 0.9999,
+          "precision": 0.0031,
+          "thin_vessel_sensitivity": 0.0,
+          "vascular_continuity_ratio": 4.55
+        },
+        "full_n60": {
+          "dice": 0.0,
+          "iou": 0.0,
+          "sensitivity": 0.0,
+          "specificity": 0.9999,
+          "precision": 0.0031,
+          "thin_vessel_sensitivity": 0.0,
+          "vascular_continuity_ratio": 4.51
+        }
+      },
+      "thresh_0.25": {
+        "threshold": 0.25,
+        "clean_n59": {
+          "dice": 0.0,
+          "iou": 0.0,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0036,
+          "thin_vessel_sensitivity": 0.0,
+          "vascular_continuity_ratio": 2.08
+        },
+        "full_n60": {
+          "dice": 0.0,
+          "iou": 0.0,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0036,
+          "thin_vessel_sensitivity": 0.0,
+          "vascular_continuity_ratio": 2.04
+        }
+      },
+      "thresh_0.30": {
+        "threshold": 0.3,
+        "clean_n59": {
+          "dice": 0.0,
+          "iou": 0.0,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0021,
+          "thin_vessel_sensitivity": 0.0,
+          "vascular_continuity_ratio": 1.01
+        },
+        "full_n60": {
+          "dice": 0.0,
+          "iou": 0.0,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0021,
+          "thin_vessel_sensitivity": 0.0,
+          "vascular_continuity_ratio": 0.99
+        }
+      }
+    }
+  },
+  "clean_benchmark_comparison": {
+    "experiment_c_raw": {
+      "dice": 0.0456,
+      "iou": 0.0249,
+      "sensitivity": 0.0351,
+      "specificity": 0.9857,
+      "precision": 0.1278,
+      "thin_vessel_sensitivity": 0.028,
+      "vascular_continuity_ratio": 1163.71
+    },
+    "experiment_d_restored": {
+      "dice": 0.0009,
+      "iou": 0.0005,
+      "sensitivity": 0.0005,
+      "specificity": 0.9978,
+      "precision": 0.0334,
+      "thin_vessel_sensitivity": 0.0013,
+      "vascular_continuity_ratio": 71.79
+    },
+    "delta_restored_minus_raw": {
+      "dice_delta": -0.0447,
+      "iou_delta": -0.0244,
+      "thin_vessel_sensitivity_delta": -0.0267,
+      "continuity_ratio_delta": -1091.92
+    }
+  }
+}

@@ -7,7 +7,11 @@ import cv2
 import math
 
 from skimage import metrics
-from sklearn.metrics import mean_absolute_error
+try:
+    from sklearn.metrics import mean_absolute_error
+except ImportError:
+    def mean_absolute_error(y_true, y_pred, **kwargs):
+        return np.mean(np.abs(y_true - y_pred))
 
 def MAE(img1, img2):
     mae_0=mean_absolute_error(img1[:,:,0], img2[:,:,0],

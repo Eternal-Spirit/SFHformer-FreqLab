@@ -1,0 +1,1184 @@
+{
+  "total_candidates": 112,
+  "distance_summary": {
+    "0": {
+      "total_pairs": 1,
+      "same_disease_pairs": 0,
+      "different_disease_pairs": 1
+    },
+    "1": {
+      "total_pairs": 2,
+      "same_disease_pairs": 1,
+      "different_disease_pairs": 1
+    },
+    "2": {
+      "total_pairs": 6,
+      "same_disease_pairs": 1,
+      "different_disease_pairs": 5
+    },
+    "3": {
+      "total_pairs": 23,
+      "same_disease_pairs": 10,
+      "different_disease_pairs": 13
+    },
+    "4": {
+      "total_pairs": 80,
+      "same_disease_pairs": 17,
+      "different_disease_pairs": 63
+    }
+  },
+  "suspicious_pairs_dist_le_1": [
+    {
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_472_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 0,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "MODERATE"
+    },
+    {
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_430_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 1,
+      "test_disease": "G",
+      "train_val_disease": "G",
+      "same_disease_category": true,
+      "suspicion_level": "HIGH"
+    },
+    {
+      "test_image": "test_107_G.png",
+      "train_val_image": "train_579_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 1,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "MODERATE"
+    }
+  ],
+  "all_flagged_pairs": [
+    {
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_472_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 0,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "MODERATE"
+    },
+    {
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_430_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 1,
+      "test_disease": "G",
+      "train_val_disease": "G",
+      "same_disease_category": true,
+      "suspicion_level": "HIGH"
+    },
+    {
+      "test_image": "test_107_G.png",
+      "train_val_image": "train_579_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 1,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "MODERATE"
+    },
+    {
+      "test_image": "test_172_N.png",
+      "train_val_image": "train_454_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 2,
+      "test_disease": "N",
+      "train_val_disease": "N",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_106_G.png",
+      "train_val_image": "train_466_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 2,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_130_G.png",
+      "train_val_image": "train_579_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 2,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_31_A.png",
+      "train_val_image": "train_483_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 2,
+      "test_disease": "A",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_73_D.png",
+      "train_val_image": "train_343_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 2,
+      "test_disease": "D",
+      "train_val_disease": "G",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_74_D.png",
+      "train_val_image": "train_507_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 2,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_107_G.png",
+      "train_val_image": "train_440_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "G",
+      "train_val_disease": "G",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_131_G.png",
+      "train_val_image": "train_376_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "G",
+      "train_val_disease": "G",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_181_N.png",
+      "train_val_image": "train_524_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "N",
+      "train_val_disease": "N",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_193_N.png",
+      "train_val_image": "train_473_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "N",
+      "train_val_disease": "N",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_21_A.png",
+      "train_val_image": "train_80_A.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "A",
+      "train_val_disease": "A",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_32_A.png",
+      "train_val_image": "train_11_A.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "A",
+      "train_val_disease": "A",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_32_A.png",
+      "train_val_image": "train_19_A.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "A",
+      "train_val_disease": "A",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_48_A.png",
+      "train_val_image": "train_11_A.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "A",
+      "train_val_disease": "A",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_48_A.png",
+      "train_val_image": "train_19_A.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "A",
+      "train_val_disease": "A",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_86_D.png",
+      "train_val_image": "train_193_D.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "D",
+      "train_val_disease": "D",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_100_D.png",
+      "train_val_image": "train_487_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_100_D.png",
+      "train_val_image": "train_516_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_106_G.png",
+      "train_val_image": "train_472_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_156_N.png",
+      "train_val_image": "train_406_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "N",
+      "train_val_disease": "G",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_171_N.png",
+      "train_val_image": "train_403_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "N",
+      "train_val_disease": "G",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_31_A.png",
+      "train_val_image": "train_478_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "A",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_31_A.png",
+      "train_val_image": "train_487_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "A",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_31_A.png",
+      "train_val_image": "train_516_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "A",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_56_D.png",
+      "train_val_image": "train_3_A.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "D",
+      "train_val_disease": "A",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_56_D.png",
+      "train_val_image": "train_487_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_56_D.png",
+      "train_val_image": "train_516_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_84_D.png",
+      "train_val_image": "train_518_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_89_D.png",
+      "train_val_image": "train_503_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 3,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_106_G.png",
+      "train_val_image": "train_314_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "G",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_106_G.png",
+      "train_val_image": "train_430_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "G",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_107_G.png",
+      "train_val_image": "train_301_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "G",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_107_G.png",
+      "train_val_image": "train_343_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "G",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_343_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "G",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_408_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "G",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_130_G.png",
+      "train_val_image": "train_440_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "G",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_131_G.png",
+      "train_val_image": "train_433_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "G",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_170_N.png",
+      "train_val_image": "train_472_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "N",
+      "train_val_disease": "N",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_170_N.png",
+      "train_val_image": "train_508_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "N",
+      "train_val_disease": "N",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_170_N.png",
+      "train_val_image": "train_524_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "N",
+      "train_val_disease": "N",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_172_N.png",
+      "train_val_image": "train_517_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "N",
+      "train_val_disease": "N",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_181_N.png",
+      "train_val_image": "train_478_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "N",
+      "train_val_disease": "N",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_73_D.png",
+      "train_val_image": "train_167_D.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "D",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_74_D.png",
+      "train_val_image": "train_192_D.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "D",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_74_D.png",
+      "train_val_image": "train_226_D.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "D",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_7_A.png",
+      "train_val_image": "train_11_A.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "A",
+      "train_val_disease": "A",
+      "same_disease_category": true,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_100_D.png",
+      "train_val_image": "train_468_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_100_D.png",
+      "train_val_image": "train_483_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_100_D.png",
+      "train_val_image": "train_568_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_103_G.png",
+      "train_val_image": "train_590_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_105_G.png",
+      "train_val_image": "train_579_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_105_G.png",
+      "train_val_image": "train_474_N.png",
+      "train_val_split": "val",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_106_G.png",
+      "train_val_image": "train_487_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_106_G.png",
+      "train_val_image": "train_516_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_106_G.png",
+      "train_val_image": "train_73_A.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "A",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_107_G.png",
+      "train_val_image": "train_167_D.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "D",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_107_G.png",
+      "train_val_image": "train_472_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_107_G.png",
+      "train_val_image": "train_524_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_150_A.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "A",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_167_D.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "D",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_462_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_468_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_483_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_508_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_524_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_542_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_130_G.png",
+      "train_val_image": "train_478_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_130_G.png",
+      "train_val_image": "train_474_N.png",
+      "train_val_split": "val",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_131_G.png",
+      "train_val_image": "train_487_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_131_G.png",
+      "train_val_image": "train_516_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_131_G.png",
+      "train_val_image": "train_274_D.png",
+      "train_val_split": "val",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "D",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_142_G.png",
+      "train_val_image": "train_209_D.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "D",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_146_G.png",
+      "train_val_image": "train_11_A.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "G",
+      "train_val_disease": "A",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_155_N.png",
+      "train_val_image": "train_280_D.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "N",
+      "train_val_disease": "D",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_155_N.png",
+      "train_val_image": "train_433_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "N",
+      "train_val_disease": "G",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_15_A.png",
+      "train_val_image": "train_524_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "A",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_170_N.png",
+      "train_val_image": "train_167_D.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "N",
+      "train_val_disease": "D",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_170_N.png",
+      "train_val_image": "train_337_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "N",
+      "train_val_disease": "G",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_170_N.png",
+      "train_val_image": "train_343_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "N",
+      "train_val_disease": "G",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_182_N.png",
+      "train_val_image": "train_406_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "N",
+      "train_val_disease": "G",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_21_A.png",
+      "train_val_image": "train_468_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "A",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_2_A.png",
+      "train_val_image": "train_160_D.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "A",
+      "train_val_disease": "D",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_2_A.png",
+      "train_val_image": "train_193_D.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "A",
+      "train_val_disease": "D",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_2_A.png",
+      "train_val_image": "train_559_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "A",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_2_A.png",
+      "train_val_image": "train_600_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "A",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_31_A.png",
+      "train_val_image": "train_205_D.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "A",
+      "train_val_disease": "D",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_31_A.png",
+      "train_val_image": "train_327_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "A",
+      "train_val_disease": "G",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_31_A.png",
+      "train_val_image": "train_568_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "A",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_31_A.png",
+      "train_val_image": "train_587_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "A",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_56_D.png",
+      "train_val_image": "train_468_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_56_D.png",
+      "train_val_image": "train_483_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_73_D.png",
+      "train_val_image": "train_462_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_73_D.png",
+      "train_val_image": "train_472_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_73_D.png",
+      "train_val_image": "train_508_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_73_D.png",
+      "train_val_image": "train_542_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_73_D.png",
+      "train_val_image": "train_558_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_74_D.png",
+      "train_val_image": "train_484_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_78_D.png",
+      "train_val_image": "train_513_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_7_A.png",
+      "train_val_image": "train_257_D.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "A",
+      "train_val_disease": "D",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_7_A.png",
+      "train_val_image": "train_577_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "A",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_7_A.png",
+      "train_val_image": "train_590_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "A",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_80_D.png",
+      "train_val_image": "train_406_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "G",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_86_D.png",
+      "train_val_image": "train_432_G.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "G",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_86_D.png",
+      "train_val_image": "train_503_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_86_D.png",
+      "train_val_image": "train_507_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_89_D.png",
+      "train_val_image": "train_519_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_89_D.png",
+      "train_val_image": "train_559_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_89_D.png",
+      "train_val_image": "train_567_N.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "N",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    },
+    {
+      "test_image": "test_93_D.png",
+      "train_val_image": "train_46_A.png",
+      "train_val_split": "train",
+      "retinal_masked_hamming_distance": 4,
+      "test_disease": "D",
+      "train_val_disease": "A",
+      "same_disease_category": false,
+      "suspicion_level": "LOW"
+    }
+  ]
+}

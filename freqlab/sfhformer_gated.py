@@ -1,4 +1,4 @@
-﻿"""
+"""
 SFHformer with RadialBandGate — gated variant for frequency robustness experiments.
 
 This file is a modified copy of models/SFHformer.py.
@@ -147,11 +147,20 @@ class FourierUnit(nn.Module):
 
     def forward(self, x):
         batch, c, h, w = x.size()
+        orig_dtype = x.dtype
+        # cuFFT in PyTorch requires float32/float64 for rfft2 / irfft2
+        if x.dtype in (torch.bfloat16, torch.float16):
+            x = x.float()
+
         ffted = torch.fft.rfft2(x, norm='ortho')
         x_fft_real = torch.unsqueeze(torch.real(ffted), dim=-1)
         x_fft_imag = torch.unsqueeze(torch.imag(ffted), dim=-1)
         ffted = torch.cat((x_fft_real, x_fft_imag), dim=-1)
         ffted = rearrange(ffted, 'b c h w d -> b (c d) h w').contiguous()
+
+        # Execute convolutions / projections in mixed-precision dtype if active
+        if orig_dtype in (torch.bfloat16, torch.float16):
+            ffted = ffted.to(orig_dtype)
 
         # MODIFIED(freqlab): apply gate before batch norm
         if self.use_gate:
@@ -163,9 +172,15 @@ class FourierUnit(nn.Module):
         ffted = self.fdc(ffted).view(batch, self.groups, 2 * c, h, -1)
         ffted = torch.einsum('ijkml,ijml->ikml', ffted, dy_weight)
         ffted = F.gelu(ffted)
+
+        # Convert back to float32 for complex representation and inverse FFT
         ffted = rearrange(ffted, 'b (c d) h w -> b c h w d', d=2).contiguous()
+        if ffted.dtype != torch.float32:
+            ffted = ffted.float()
         ffted = torch.view_as_complex(ffted)
         output = torch.fft.irfft2(ffted, s=(h, w), norm='ortho')
+        if output.dtype != orig_dtype:
+            output = output.to(orig_dtype)
         return output
 
 

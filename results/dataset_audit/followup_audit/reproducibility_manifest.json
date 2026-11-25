@@ -1,0 +1,43 @@
+{
+  "git_commit": "d1355538eff4447b7e2fd97936484cadefd89a3c",
+  "rng_seed": 2026,
+  "hardware_safeguards": {
+    "pytorch_allocator_cap_pct": 70,
+    "vram_limit_gb": 5.57,
+    "torch_compile": "Disabled",
+    "cuda_graphs": "Disabled"
+  },
+  "library_versions": {
+    "python": "3.11.17",
+    "torch": "2.11.0+cu128",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "numpy": "2.4.6",
+    "scipy": "scipy_available",
+    "skimage": "0.26.0",
+    "pillow": "12.3.0",
+    "pyarrow": "26.0.0"
+  },
+  "dataset_checksums": {
+    "fives_dataset_split_json": {
+      "path": "D:\\SFHformer-FreqLab\\data\\fives\\dataset_split.json",
+      "size_bytes": 64199,
+      "sha256": "f904f546d6464437425a04df0b37f68f6ed44ceb188c7873e8f014dec5f7e2bc"
+    },
+    "hrf_dataset_parquet": {
+      "path": "D:\\SFHformer-FreqLab\\data\\hrf\\hrf_dataset.parquet",
+      "size_bytes": 76543325,
+      "sha256": "c5d01f77a0c071173c477ffe3bca57f39df61577f329fa6e7057c7da6e318e46"
+    },
+    "train_patch_manifest_512_json": {
+      "path": "D:\\SFHformer-FreqLab\\data\\fives\\patches_512\\train_patch_manifest_512.json",
+      "size_bytes": 504463,
+      "sha256": "c14fe01f66a3b29c698304f0bc51d41c34bea1e9a7d773da67b1905ee8d78035"
+    },
+    "val_tile_manifest_json": {
+      "path": "D:\\SFHformer-FreqLab\\data\\fives\\patches_512\\val_full_image_tile_manifest.json",
+      "size_bytes": 136556,
+      "sha256": "90a9c5438f7be3de86c2b86cc45506f25008b5106d2ca0d46aade87cb31c48f1"
+    }
+  }
+}

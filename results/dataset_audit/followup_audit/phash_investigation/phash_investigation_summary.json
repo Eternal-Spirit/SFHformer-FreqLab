@@ -1,0 +1,172 @@
+{
+  "unmasked_distance_breakdown": {
+    "0": 0,
+    "1": 1,
+    "2": 31,
+    "3": 21,
+    "4": 140
+  },
+  "masked_distance_breakdown": {
+    "0": 1,
+    "1": 2,
+    "2": 6,
+    "3": 23,
+    "4": 80
+  },
+  "mean_candidate_shift": 3.51,
+  "mean_unmasked_candidate_distance": 3.55,
+  "mean_masked_candidate_distance": 7.07,
+  "top_pairs_detailed": [
+    {
+      "test_image": "test_106_G.png",
+      "train_val_image": "train_101_A.png",
+      "train_val_split": "train",
+      "unmasked_distance": 1,
+      "retinal_masked_distance": 6,
+      "delta": 5
+    },
+    {
+      "test_image": "test_105_G.png",
+      "train_val_image": "train_461_N.png",
+      "train_val_split": "train",
+      "unmasked_distance": 2,
+      "retinal_masked_distance": 8,
+      "delta": 6
+    },
+    {
+      "test_image": "test_106_G.png",
+      "train_val_image": "train_466_N.png",
+      "train_val_split": "train",
+      "unmasked_distance": 2,
+      "retinal_masked_distance": 2,
+      "delta": 0
+    },
+    {
+      "test_image": "test_106_G.png",
+      "train_val_image": "train_573_N.png",
+      "train_val_split": "train",
+      "unmasked_distance": 2,
+      "retinal_masked_distance": 7,
+      "delta": 5
+    },
+    {
+      "test_image": "test_107_G.png",
+      "train_val_image": "train_466_N.png",
+      "train_val_split": "train",
+      "unmasked_distance": 2,
+      "retinal_masked_distance": 5,
+      "delta": 3
+    },
+    {
+      "test_image": "test_107_G.png",
+      "train_val_image": "train_573_N.png",
+      "train_val_split": "train",
+      "unmasked_distance": 2,
+      "retinal_masked_distance": 6,
+      "delta": 4
+    },
+    {
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_150_A.png",
+      "train_val_split": "train",
+      "unmasked_distance": 2,
+      "retinal_masked_distance": 4,
+      "delta": 2
+    },
+    {
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_466_N.png",
+      "train_val_split": "train",
+      "unmasked_distance": 2,
+      "retinal_masked_distance": 5,
+      "delta": 3
+    }
+  ],
+  "comparison_visualizations": [
+    {
+      "rank": 1,
+      "test_image": "test_106_G.png",
+      "train_val_image": "train_101_A.png",
+      "train_val_split": "train",
+      "unmasked_distance": 1,
+      "retinal_masked_distance": 6,
+      "image_path": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\phash_investigation\\comparison_rank01_test_test_106_G_vs_train_train_101_A.png"
+    },
+    {
+      "rank": 2,
+      "test_image": "test_105_G.png",
+      "train_val_image": "train_461_N.png",
+      "train_val_split": "train",
+      "unmasked_distance": 2,
+      "retinal_masked_distance": 8,
+      "image_path": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\phash_investigation\\comparison_rank02_test_test_105_G_vs_train_train_461_N.png"
+    },
+    {
+      "rank": 3,
+      "test_image": "test_106_G.png",
+      "train_val_image": "train_466_N.png",
+      "train_val_split": "train",
+      "unmasked_distance": 2,
+      "retinal_masked_distance": 2,
+      "image_path": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\phash_investigation\\comparison_rank03_test_test_106_G_vs_train_train_466_N.png"
+    },
+    {
+      "rank": 4,
+      "test_image": "test_106_G.png",
+      "train_val_image": "train_573_N.png",
+      "train_val_split": "train",
+      "unmasked_distance": 2,
+      "retinal_masked_distance": 7,
+      "image_path": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\phash_investigation\\comparison_rank04_test_test_106_G_vs_train_train_573_N.png"
+    },
+    {
+      "rank": 5,
+      "test_image": "test_107_G.png",
+      "train_val_image": "train_466_N.png",
+      "train_val_split": "train",
+      "unmasked_distance": 2,
+      "retinal_masked_distance": 5,
+      "image_path": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\phash_investigation\\comparison_rank05_test_test_107_G_vs_train_train_466_N.png"
+    },
+    {
+      "rank": 6,
+      "test_image": "test_107_G.png",
+      "train_val_image": "train_573_N.png",
+      "train_val_split": "train",
+      "unmasked_distance": 2,
+      "retinal_masked_distance": 6,
+      "image_path": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\phash_investigation\\comparison_rank06_test_test_107_G_vs_train_train_573_N.png"
+    },
+    {
+      "rank": 7,
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_150_A.png",
+      "train_val_split": "train",
+      "unmasked_distance": 2,
+      "retinal_masked_distance": 4,
+      "image_path": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\phash_investigation\\comparison_rank07_test_test_118_G_vs_train_train_150_A.png"
+    },
+    {
+      "rank": 8,
+      "test_image": "test_118_G.png",
+      "train_val_image": "train_466_N.png",
+      "train_val_split": "train",
+      "unmasked_distance": 2,
+      "retinal_masked_distance": 5,
+      "image_path": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\phash_investigation\\comparison_rank08_test_test_118_G_vs_train_train_466_N.png"
+    }
+  ],
+  "clean_validation_protocol": {
+    "primary_clean_validation_n": 59,
+    "sensitivity_full_validation_n": 60,
+    "excluded_duplicate_id": "train_121_A",
+    "identical_training_counterpart": "train_61_A",
+    "test_duplicate_observation": {
+      "pair": [
+        "test_32_A.png",
+        "test_48_A.png"
+      ],
+      "protocol": "Documented as non-independent observations in test statistical tests; no Train-Test leakage."
+    }
+  }
+}

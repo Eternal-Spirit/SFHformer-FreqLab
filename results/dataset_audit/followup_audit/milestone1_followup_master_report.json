@@ -1,0 +1,1411 @@
+{
+  "audit_version": "Milestone 1 Follow-up Audit v1.0",
+  "elapsed_seconds": 9.3,
+  "duplicate_detection": {
+    "total_images_analyzed": 800,
+    "exact_duplicates_count": 6,
+    "exact_duplicates": {
+      "9753cb5f41c48fec109e07d4f2c0d70afa33673d92740a5d209226519699c5af": [
+        [
+          "train",
+          "train_118_A.png"
+        ],
+        [
+          "train",
+          "train_34_A.png"
+        ]
+      ],
+      "8d279918bcb2d100c38ccc68268919f5a2bd99888e4b9473958f8cf5529624f9": [
+        [
+          "train",
+          "train_132_A.png"
+        ],
+        [
+          "train",
+          "train_39_A.png"
+        ]
+      ],
+      "abf02385735820959e83121e3a17ecd72db05ca98967cd95a7e782b6587b233a": [
+        [
+          "train",
+          "train_134_A.png"
+        ],
+        [
+          "train",
+          "train_55_A.png"
+        ]
+      ],
+      "5f7a46d62b21b5455419e6b18a9997a12166aedb3fd2f6dba20f5a86dc0db49f": [
+        [
+          "train",
+          "train_53_A.png"
+        ],
+        [
+          "train",
+          "train_97_A.png"
+        ]
+      ],
+      "b25a2ec00cc1c2de02ef4dc2c12af1eac6af50fb93c1498c78500f1f7c0ac023": [
+        [
+          "train",
+          "train_61_A.png"
+        ],
+        [
+          "val",
+          "train_121_A.png"
+        ]
+      ],
+      "683d2e2c7ee2c0491c9d3f7e02656c46b447725b74258b034f5a1491a993d9e9": [
+        [
+          "test",
+          "test_32_A.png"
+        ],
+        [
+          "test",
+          "test_48_A.png"
+        ]
+      ]
+    },
+    "near_duplicates_count": 193,
+    "near_duplicate_pairs": [
+      {
+        "test_image": "test_100_D.png",
+        "train_val_image": "train_213_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_105_G.png",
+        "train_val_image": "train_150_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_105_G.png",
+        "train_val_image": "train_460_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_105_G.png",
+        "train_val_image": "train_461_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_105_G.png",
+        "train_val_image": "train_462_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_105_G.png",
+        "train_val_image": "train_466_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_105_G.png",
+        "train_val_image": "train_468_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_105_G.png",
+        "train_val_image": "train_472_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_105_G.png",
+        "train_val_image": "train_499_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_105_G.png",
+        "train_val_image": "train_545_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_105_G.png",
+        "train_val_image": "train_547_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_105_G.png",
+        "train_val_image": "train_398_G.png",
+        "train_val_split": "val",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_106_G.png",
+        "train_val_image": "train_101_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 1
+      },
+      {
+        "test_image": "test_106_G.png",
+        "train_val_image": "train_150_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_106_G.png",
+        "train_val_image": "train_327_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_106_G.png",
+        "train_val_image": "train_348_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_106_G.png",
+        "train_val_image": "train_42_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_106_G.png",
+        "train_val_image": "train_430_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_106_G.png",
+        "train_val_image": "train_466_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_106_G.png",
+        "train_val_image": "train_468_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_106_G.png",
+        "train_val_image": "train_472_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_106_G.png",
+        "train_val_image": "train_478_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_106_G.png",
+        "train_val_image": "train_524_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_106_G.png",
+        "train_val_image": "train_573_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_106_G.png",
+        "train_val_image": "train_579_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_107_G.png",
+        "train_val_image": "train_101_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_107_G.png",
+        "train_val_image": "train_466_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_107_G.png",
+        "train_val_image": "train_524_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_107_G.png",
+        "train_val_image": "train_573_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_115_G.png",
+        "train_val_image": "train_286_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_116_G.png",
+        "train_val_image": "train_283_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_116_G.png",
+        "train_val_image": "train_333_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_117_G.png",
+        "train_val_image": "train_378_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_101_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_150_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_283_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_314_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_327_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_348_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_42_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_430_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_461_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_462_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_466_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_468_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_472_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_478_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_487_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_499_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_4_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_508_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_545_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_547_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_568_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_573_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_579_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_583_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_73_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_118_G.png",
+        "train_val_image": "train_420_G.png",
+        "train_val_split": "val",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_130_G.png",
+        "train_val_image": "train_101_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_130_G.png",
+        "train_val_image": "train_232_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_130_G.png",
+        "train_val_image": "train_420_G.png",
+        "train_val_split": "val",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_131_G.png",
+        "train_val_image": "train_101_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_131_G.png",
+        "train_val_image": "train_150_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_131_G.png",
+        "train_val_image": "train_232_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_131_G.png",
+        "train_val_image": "train_280_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_131_G.png",
+        "train_val_image": "train_283_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_131_G.png",
+        "train_val_image": "train_468_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_131_G.png",
+        "train_val_image": "train_487_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_131_G.png",
+        "train_val_image": "train_583_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_131_G.png",
+        "train_val_image": "train_73_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_131_G.png",
+        "train_val_image": "train_274_D.png",
+        "train_val_split": "val",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_131_G.png",
+        "train_val_image": "train_420_G.png",
+        "train_val_split": "val",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_139_G.png",
+        "train_val_image": "train_514_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_141_G.png",
+        "train_val_image": "train_37_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_142_G.png",
+        "train_val_image": "train_209_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_143_G.png",
+        "train_val_image": "train_575_N.png",
+        "train_val_split": "val",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_14_A.png",
+        "train_val_image": "train_245_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_14_A.png",
+        "train_val_image": "train_297_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_152_N.png",
+        "train_val_image": "train_333_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_152_N.png",
+        "train_val_image": "train_420_G.png",
+        "train_val_split": "val",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_152_N.png",
+        "train_val_image": "train_561_N.png",
+        "train_val_split": "val",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_162_N.png",
+        "train_val_image": "train_314_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_162_N.png",
+        "train_val_image": "train_46_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_174_N.png",
+        "train_val_image": "train_470_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_174_N.png",
+        "train_val_image": "train_475_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_174_N.png",
+        "train_val_image": "train_492_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_174_N.png",
+        "train_val_image": "train_493_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_174_N.png",
+        "train_val_image": "train_516_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_174_N.png",
+        "train_val_image": "train_520_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_174_N.png",
+        "train_val_image": "train_560_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_174_N.png",
+        "train_val_image": "train_568_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_174_N.png",
+        "train_val_image": "train_587_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_174_N.png",
+        "train_val_image": "train_172_D.png",
+        "train_val_split": "val",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_180_N.png",
+        "train_val_image": "train_422_G.png",
+        "train_val_split": "val",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_181_N.png",
+        "train_val_image": "train_472_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_184_N.png",
+        "train_val_image": "train_302_G.png",
+        "train_val_split": "val",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_20_A.png",
+        "train_val_image": "train_466_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_20_A.png",
+        "train_val_image": "train_478_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_20_A.png",
+        "train_val_image": "train_573_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_21_A.png",
+        "train_val_image": "train_80_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_2_A.png",
+        "train_val_image": "train_160_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_2_A.png",
+        "train_val_image": "train_198_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_2_A.png",
+        "train_val_image": "train_226_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_2_A.png",
+        "train_val_image": "train_421_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_2_A.png",
+        "train_val_image": "train_510_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_2_A.png",
+        "train_val_image": "train_511_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_2_A.png",
+        "train_val_image": "train_562_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_150_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_167_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_280_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_327_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_348_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_370_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_430_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_468_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_472_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_478_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_487_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_508_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_524_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_542_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_547_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_568_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_573_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_31_A.png",
+        "train_val_image": "train_579_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_32_A.png",
+        "train_val_image": "train_11_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_32_A.png",
+        "train_val_image": "train_19_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_33_A.png",
+        "train_val_image": "train_167_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_39_A.png",
+        "train_val_image": "train_86_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_48_A.png",
+        "train_val_image": "train_11_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_48_A.png",
+        "train_val_image": "train_19_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_54_D.png",
+        "train_val_image": "train_563_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_150_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_205_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_224_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_232_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_283_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_314_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_348_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_3_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_460_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_461_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_462_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_466_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_468_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_472_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_478_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_487_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_4_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_508_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_516_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_545_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_547_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_568_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_583_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_73_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 3
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_420_G.png",
+        "train_val_split": "val",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_56_D.png",
+        "train_val_image": "train_422_G.png",
+        "train_val_split": "val",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_70_D.png",
+        "train_val_image": "train_90_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_73_D.png",
+        "train_val_image": "train_150_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_73_D.png",
+        "train_val_image": "train_167_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_73_D.png",
+        "train_val_image": "train_278_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_73_D.png",
+        "train_val_image": "train_2_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_73_D.png",
+        "train_val_image": "train_408_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_73_D.png",
+        "train_val_image": "train_468_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_73_D.png",
+        "train_val_image": "train_478_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_73_D.png",
+        "train_val_image": "train_542_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_73_D.png",
+        "train_val_image": "train_547_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_73_D.png",
+        "train_val_image": "train_558_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_77_D.png",
+        "train_val_image": "train_378_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_78_D.png",
+        "train_val_image": "train_50_A.png",
+        "train_val_split": "val",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_7_A.png",
+        "train_val_image": "train_257_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_82_D.png",
+        "train_val_image": "train_327_G.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_86_D.png",
+        "train_val_image": "train_507_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_86_D.png",
+        "train_val_image": "train_510_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_86_D.png",
+        "train_val_image": "train_511_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_86_D.png",
+        "train_val_image": "train_562_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_89_D.png",
+        "train_val_image": "train_286_D.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_89_D.png",
+        "train_val_image": "train_503_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_8_A.png",
+        "train_val_image": "train_150_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_8_A.png",
+        "train_val_image": "train_462_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_8_A.png",
+        "train_val_image": "train_466_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_8_A.png",
+        "train_val_image": "train_468_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_8_A.png",
+        "train_val_image": "train_472_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_8_A.png",
+        "train_val_image": "train_524_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_8_A.png",
+        "train_val_image": "train_573_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 2
+      },
+      {
+        "test_image": "test_90_D.png",
+        "train_val_image": "train_85_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_93_D.png",
+        "train_val_image": "train_11_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_93_D.png",
+        "train_val_image": "train_19_A.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_93_D.png",
+        "train_val_image": "train_527_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_93_D.png",
+        "train_val_image": "train_538_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      },
+      {
+        "test_image": "test_93_D.png",
+        "train_val_image": "train_560_N.png",
+        "train_val_split": "train",
+        "hamming_distance": 4
+      }
+    ]
+  },
+  "fov_clipping_deepdive": [
+    {
+      "image_id": "test_133_G",
+      "split": "test",
+      "disease_label": "Glaucoma",
+      "total_annotated_vessel_pixels (denominator)": 114031,
+      "clipped_vessel_pixels (numerator)": 13448,
+      "clipping_percentage": 11.7933,
+      "radial_location_ratio": 0.797,
+      "finding": "Clipped structures occur interiorly due to severe dark pathological excavation.",
+      "diagnostic_image": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\fov_clipping_deepdive\\fov_deepdive_test_133_G.png"
+    },
+    {
+      "image_id": "train_361_G",
+      "split": "val",
+      "disease_label": "Glaucoma",
+      "total_annotated_vessel_pixels (denominator)": 72221,
+      "clipped_vessel_pixels (numerator)": 6756,
+      "clipping_percentage": 9.3546,
+      "radial_location_ratio": 0.701,
+      "finding": "Clipped structures occur interiorly due to severe dark pathological excavation.",
+      "diagnostic_image": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\fov_clipping_deepdive\\fov_deepdive_train_361_G.png"
+    },
+    {
+      "image_id": "test_145_G",
+      "split": "test",
+      "disease_label": "Glaucoma",
+      "total_annotated_vessel_pixels (denominator)": 129252,
+      "clipped_vessel_pixels (numerator)": 10095,
+      "clipping_percentage": 7.8103,
+      "radial_location_ratio": 0.848,
+      "finding": "Clipped structures are located at extreme optical perimeter (84.8% radius). Caused by severe optical vignetting/crescent shadow where camera aperture illumination falls below the 0.05 threshold. Human annotator continued tracing vessel into the dark border shadow, whereas automated luminance thresholding excluded the unilluminated camera margin.",
+      "diagnostic_image": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\fov_clipping_deepdive\\fov_deepdive_test_145_G.png"
+    },
+    {
+      "image_id": "train_353_G",
+      "split": "val",
+      "disease_label": "Glaucoma",
+      "total_annotated_vessel_pixels (denominator)": 214190,
+      "clipped_vessel_pixels (numerator)": 12951,
+      "clipping_percentage": 6.0465,
+      "radial_location_ratio": 0.769,
+      "finding": "Clipped structures occur interiorly due to severe dark pathological excavation.",
+      "diagnostic_image": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\fov_clipping_deepdive\\fov_deepdive_train_353_G.png"
+    },
+    {
+      "image_id": "test_68_D",
+      "split": "test",
+      "disease_label": "Diabetic Retinopathy",
+      "total_annotated_vessel_pixels (denominator)": 340778,
+      "clipped_vessel_pixels (numerator)": 3848,
+      "clipping_percentage": 1.1292,
+      "radial_location_ratio": 1.156,
+      "finding": "Clipped structures are located at extreme optical perimeter (115.6% radius). Caused by severe optical vignetting/crescent shadow where camera aperture illumination falls below the 0.05 threshold. Human annotator continued tracing vessel into the dark border shadow, whereas automated luminance thresholding excluded the unilluminated camera margin.",
+      "diagnostic_image": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\fov_clipping_deepdive\\fov_deepdive_test_68_D.png"
+    }
+  ],
+  "patch_sampling_audit": {
+    "total_patches": 2160,
+    "contributing_images": 540,
+    "patches_per_image": 4,
+    "contributing_images_by_stratum": {
+      "vessel_rich": 503,
+      "mixed": 420,
+      "vessel_poor": 131
+    },
+    "strata_counts": {
+      "vessel_rich": 1241,
+      "mixed": 717,
+      "vessel_poor": 202
+    },
+    "vessel_density_distribution": {
+      "min": 0.0,
+      "p25": 5.64,
+      "median": 9.15,
+      "p75": 13.96,
+      "max": 27.15,
+      "mean": 9.98,
+      "std": 5.68
+    },
+    "intra_image_pair_overlap_pct": 30.77,
+    "mean_overlap_iou": 0.0574,
+    "rng_seed": 2026
+  },
+  "validation_tiling_verification": {
+    "full_canvas_resolution": [
+      2048,
+      2048
+    ],
+    "tile_size": 512,
+    "stride": 384,
+    "tiles_per_image": 25,
+    "zero_coverage_pixels": 0,
+    "min_coverage_factor": 1,
+    "max_coverage_factor": 4,
+    "seam_reconstruction_mae": 8.93442120286636e-09,
+    "coverage_heatmap_file": "D:\\SFHformer-FreqLab\\results\\dataset_audit\\followup_audit\\diagnostics\\val_tile_coverage_heatmap.png"
+  },
+  "thin_vessel_documentation": {
+    "selection_protocol": "Stratified sampling across all represented disease categories (4/4/4/3 for FIVES; 5/5/5 for HRF)",
+    "fives_sampled_images": [
+      "train_451_N.png",
+      "train_452_N.png",
+      "train_453_N.png",
+      "train_454_N.png",
+      "train_101_A.png",
+      "train_102_A.png",
+      "train_103_A.png",
+      "train_105_A.png",
+      "train_151_D.png",
+      "train_152_D.png",
+      "train_153_D.png",
+      "train_154_D.png",
+      "train_301_G.png",
+      "train_303_G.png",
+      "train_304_G.png"
+    ],
+    "hrf_sampled_images": [
+      "01_h.png",
+      "02_h.png",
+      "03_h.png",
+      "04_h.png",
+      "05_h.png",
+      "01_dr.png",
+      "02_dr.png",
+      "03_dr.png",
+      "04_dr.png",
+      "05_dr.png",
+      "01_g.png",
+      "02_g.png",
+      "03_g.png",
+      "04_g.png",
+      "05_g.png"
+    ],
+    "physical_resolution_caveat": "FIVES (2048x2048) and HRF (3504x2336) have distinct sensor pixel pitches and optical field-of-view angles; pixel diameters cannot be conflated as identical anatomical micrometer sizes."
+  },
+  "train_val_gallery_count": 16,
+  "reproducibility": {
+    "git_commit": "d1355538eff4447b7e2fd97936484cadefd89a3c",
+    "rng_seed": 2026,
+    "hardware_safeguards": {
+      "pytorch_allocator_cap_pct": 70,
+      "vram_limit_gb": 5.57,
+      "torch_compile": "Disabled",
+      "cuda_graphs": "Disabled"
+    },
+    "library_versions": {
+      "python": "3.11.17",
+      "torch": "2.11.0+cu128",
+      "cuda_available": true,
+      "gpu_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "numpy": "2.4.6",
+      "scipy": "scipy_available",
+      "skimage": "0.26.0",
+      "pillow": "12.3.0",
+      "pyarrow": "26.0.0"
+    },
+    "dataset_checksums": {
+      "fives_dataset_split_json": {
+        "path": "D:\\SFHformer-FreqLab\\data\\fives\\dataset_split.json",
+        "size_bytes": 64199,
+        "sha256": "f904f546d6464437425a04df0b37f68f6ed44ceb188c7873e8f014dec5f7e2bc"
+      },
+      "hrf_dataset_parquet": {
+        "path": "D:\\SFHformer-FreqLab\\data\\hrf\\hrf_dataset.parquet",
+        "size_bytes": 76543325,
+        "sha256": "c5d01f77a0c071173c477ffe3bca57f39df61577f329fa6e7057c7da6e318e46"
+      },
+      "train_patch_manifest_512_json": {
+        "path": "D:\\SFHformer-FreqLab\\data\\fives\\patches_512\\train_patch_manifest_512.json",
+        "size_bytes": 504463,
+        "sha256": "c14fe01f66a3b29c698304f0bc51d41c34bea1e9a7d773da67b1905ee8d78035"
+      },
+      "val_tile_manifest_json": {
+        "path": "D:\\SFHformer-FreqLab\\data\\fives\\patches_512\\val_full_image_tile_manifest.json",
+        "size_bytes": 136556,
+        "sha256": "90a9c5438f7be3de86c2b86cc45506f25008b5106d2ca0d46aade87cb31c48f1"
+      }
+    }
+  }
+}

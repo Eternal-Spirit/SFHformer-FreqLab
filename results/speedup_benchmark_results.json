@@ -1,0 +1,82 @@
+[
+  {
+    "experiment": "Baseline (FP32, Batch 1)",
+    "config": {
+      "use_amp": false,
+      "batch_size": 1,
+      "accum_steps": 4,
+      "use_compile": false,
+      "channels_last": false
+    },
+    "avg_ms_per_step": 275.0,
+    "effective_step_ms": 1100.2,
+    "samples_per_sec": 3.64,
+    "peak_vram_gb": 4.22,
+    "initial_loss": 0.0706,
+    "final_loss": 0.0481,
+    "val_psnr": 32.05,
+    "val_green_psnr": 34.56,
+    "val_ssim": 0.9145,
+    "speedup_factor": 1.0
+  },
+  {
+    "experiment": "Experiment 1 (AMP BF16, Batch 1)",
+    "config": {
+      "use_amp": true,
+      "batch_size": 1,
+      "accum_steps": 4,
+      "use_compile": false,
+      "channels_last": false
+    },
+    "avg_ms_per_step": 346.0,
+    "effective_step_ms": 1384.0,
+    "samples_per_sec": 2.89,
+    "peak_vram_gb": 2.68,
+    "initial_loss": 0.0714,
+    "final_loss": 0.0622,
+    "val_psnr": 33.87,
+    "val_green_psnr": 36.65,
+    "val_ssim": 0.933,
+    "speedup_factor": 0.79
+  },
+  {
+    "experiment": "Experiment 2 (AMP BF16, Batch 2)",
+    "config": {
+      "use_amp": true,
+      "batch_size": 2,
+      "accum_steps": 2,
+      "use_compile": false,
+      "channels_last": false
+    },
+    "avg_ms_per_step": 513.5,
+    "effective_step_ms": 1027.1,
+    "samples_per_sec": 3.89,
+    "peak_vram_gb": 4.95,
+    "initial_loss": 0.1021,
+    "final_loss": 0.0894,
+    "val_psnr": 33.34,
+    "val_green_psnr": 36.14,
+    "val_ssim": 0.9321,
+    "speedup_factor": 1.07
+  },
+  {
+    "experiment": "Experiment 4 (AMP BF16, Batch 2 + Channels Last)",
+    "config": {
+      "use_amp": true,
+      "batch_size": 2,
+      "accum_steps": 2,
+      "use_compile": false,
+      "channels_last": true
+    },
+    "avg_ms_per_step": 785.3,
+    "effective_step_ms": 1570.6,
+    "samples_per_sec": 2.55,
+    "peak_vram_gb": 4.69,
+    "initial_loss": 0.0897,
+    "final_loss": 0.1119,
+    "val_psnr": 31.95,
+    "val_green_psnr": 34.81,
+    "val_ssim": 0.9284,
+    "speedup_factor": 0.7
+  }
+]

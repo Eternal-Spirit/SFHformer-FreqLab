@@ -1,0 +1,53 @@
+{
+  "n_images": 59,
+  "thin_vessel_skeleton_sensitivity": {
+    "raw_mean": 0.1358,
+    "raw_std": 0.11,
+    "restored_mean": 0.1974,
+    "restored_std": 0.0905,
+    "mean_delta": 0.0616,
+    "bootstrap_95_ci": [
+      0.0419,
+      0.0812
+    ],
+    "wilcoxon_stat": 204.0,
+    "wilcoxon_pval": 7.579596195034102e-07,
+    "ttest_stat": 6.145,
+    "ttest_pval": 7.849013860676816e-08,
+    "is_statistically_significant": true
+  },
+  "thin_vessel_area_sensitivity": {
+    "raw_mean": 0.4938,
+    "raw_std": 0.2134,
+    "restored_mean": 0.4522,
+    "restored_std": 0.1668,
+    "mean_delta": -0.0416,
+    "bootstrap_95_ci": [
+      -0.0621,
+      -0.0196
+    ],
+    "wilcoxon_pval": 6.738603486309255e-05
+  },
+  "overall_dice": {
+    "raw_mean": 0.8495,
+    "raw_std": 0.1161,
+    "restored_mean": 0.7251,
+    "restored_std": 0.1424,
+    "mean_delta": -0.1244,
+    "wilcoxon_pval": 6.295527868771217e-11
+  },
+  "cldice_and_topology": {
+    "raw_cldice_before_closing": 0.8406,
+    "restored_cldice_before_closing": 0.6745,
+    "raw_cldice_after_closing": 0.8407,
+    "restored_cldice_after_closing": 0.6745,
+    "raw_mean_components_before_closing": 44.6,
+    "restored_mean_components_before_closing": 108.4,
+    "raw_mean_components_after_closing": 43.9,
+    "restored_mean_components_after_closing": 105.1,
+    "raw_mean_endpoints": 123.6,
+    "restored_mean_endpoints": 279.9,
+    "raw_mean_break_rate": 0.0003,
+    "restored_mean_break_rate": 0.0005
+  }
+}
